@@ -30,13 +30,8 @@ export const SideBar = (props) => {
             </table></li>
     ));
 
-
-
-    
-
     return (
         <div className='SideBar'>
-                 {/* return Widget component for each sidebar section */}
                  <Widget name="contact" title="Contact" content={contactContent}  />
                  <Widget name="summary" content={summaryContent}  />
                  <Widget name="keySkills" title="Key Skills"  content={keySkillsContent} />
