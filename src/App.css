@@ -1,5 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  max-width: 1024px;
+  grid-template-areas: 
+  "header header"
+  "sidebar main";
+  margin: 10px auto;
 }
 
 
+/* Header */
+
+header {
+  border: 2px dotted grey;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.profilePicture {
+
+  width: 200px;
+  border-radius: 50%;
+}
+
+.titleHolder {
+  justify-items: flex-end;
+  align-items: center;
+}
+
+.headerName {
+  font-size: 22px;
+}
+
+.headerTitle {
+  font-size: 16px;
+  text-align: right;
+  font-style: italic;
+}

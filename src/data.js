@@ -1,7 +1,7 @@
 export const profileData = {
     profileName: 'Michiel Roukens',
     profileTitle: 'React Developer',
-    profilePicture: "./Michiel.jpeg",
+    profilePicture: "./images/michiel.jpeg",
     jobs: [{
         type: 'job',
         period: '2021/2022',
