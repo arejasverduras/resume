@@ -16,11 +16,7 @@ export const SideBar = (props) => {
 
     const contactArray = Object.entries(contactInfo);
 
-
-
-
     const contactContent = contactArray.map(([key, value]) => (
-        // <li key={key}>{key}:{value}</li>
         <li key={key}>
             <table>
                 <tr>

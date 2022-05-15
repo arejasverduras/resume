@@ -1,22 +1,31 @@
 import React from 'react';
+import { Widget } from '../Widget/Widget';
 
 export const Content = ({jobs}) => {
-    
 
-    
+    const jobsArray = 
+    <table>
+{        jobs.map(jobObject => 
+                <>
+                <tr>
+                    <td style={{"width": "30%"}}colSpan="1" className="jobPeriod">{jobObject.period}</td>
+                    <td className="jobTitle">{jobObject.title}</td>
+
+                </tr>
+                <tr>
+                    <td></td><td className='jobDescription'>{jobObject.description}</td>
+                </tr>
+                </>
+        )}
+
+    </table>
     
     return (
         <div className='Content'>
             {/* Return a 'JobList' containgn multiple 'Job' components */}
             
-            <h3>Experience</h3>
-            {/* 
-                <JobList items={props.jobs} />
-            <h3>Education</h3>
-                <Education items={props.jobs}/>
-            
-                <Certification ={props.jobs/>
-            */}
+            <Widget title={"Experience"} name="Experience" content={jobsArray} />
+
         </div>
     )
 }
