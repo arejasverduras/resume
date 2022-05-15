@@ -70,10 +70,12 @@ header {
 
 /* Widgets */
 
-.contact li {
-  list-style: none;
-
+/* Contact */
+.contactKey {
+  font-weight: 500;
 }
+
+
 
 .summary {
   font-style:italic;

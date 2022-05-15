@@ -16,19 +16,19 @@ export const SideBar = (props) => {
 
     const contactArray = Object.entries(contactInfo);
 
-    const contactContent = contactArray.map(([key, value]) => (
-        <li key={key}>
-            <table>
+    const contactTable = 
+    <table>
+{        contactArray.map(([key, value]) => 
                 <tr>
-                    <td id="tableKey">{key} :</td>
-                    <td id="tableValue">{value}</td>
-                    </tr>            
-            </table></li>
-    ));
+                    <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
+                    <td className="contactValue">{value}</td>
+                </tr>              
+        )}
+    </table>
 
     return (
         <div className='SideBar'>
-                 <Widget name="contact" title="Contact" content={contactContent}  />
+                 <Widget name="contact" title="Contact" content={contactTable}  />
                  <Widget name="summary" content={summaryContent}  />
                  <Widget name="keySkills" title="Key Skills"  content={keySkillsContent} />
                  <Widget name="techSkills" title="Tech Skills"  content={techSkillsContent} />
