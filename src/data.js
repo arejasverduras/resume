@@ -85,8 +85,6 @@ export const profileData = {
         title: 'Atheneum',
         description: 'Atheneum. Richting Economie & Maatschappij. Keuzevak Informatica. Profielwerkstuk: Encryptie'
     },
-
-
 ],
     certifications: [{
         title: 'Back-end app with Javascript',
@@ -105,6 +103,6 @@ export const profileData = {
     },
     summary: 'Bad-ass coding Champion',
     keySkills: ['Building webapps from start to finish','Rocking React & Redux'],
-    techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
-    searchTerm: ''
+    techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library']
+
 }
