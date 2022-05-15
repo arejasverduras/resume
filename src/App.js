@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 import { profileData } from './data';
@@ -18,6 +18,14 @@ function App() {
     keySkills, 
     techSkills} = profileData;
   
+    const [searchTerm, setSearchTerm] = useState('')
+
+    const availableJobs = jobs.filter(job => 
+      (job.description.toLowerCase().includes(searchTerm.toLowerCase()) 
+        || job.title.toLowerCase().includes(searchTerm.toLowerCase()) 
+        || job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        job.location.toLowerCase().includes(searchTerm.toLowerCase())));
+
   return (
     <div className="App">
       <Header 
@@ -31,7 +39,7 @@ function App() {
     techSkills={techSkills}
     contactInfo={contactInfo}
      />
-    <Content jobs={jobs} certifications={certifications} />
+    <Content jobs={availableJobs} certifications={certifications} />
     </div>
 
   );
