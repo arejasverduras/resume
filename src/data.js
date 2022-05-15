@@ -17,12 +17,18 @@ export const profileData = {
         location: 'Twisk, The Netherlands',
         description: 'Converting cargovans to Campervans'
     }, {
-        type: 'cert',
+        type: 'edu',
         period: '2022',
         company: 'codecademy',
         location: 'At home',
         title: 'FullStack Developer Career Path Course',
         description: 'Become a coding champion'
+    }],
+    certifications: [{
+        title: 'Back-end app with Javascript',
+        description: "Write API's with Node, Express & SQL",
+        institute: 'Codecademy',
+        date: "Jan '21"
     }],
     contactInfo: {
         tel: '+31614819860',

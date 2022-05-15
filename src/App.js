@@ -7,7 +7,7 @@ import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
 
 function App() {
-  const { jobs, profileName, profileTitle, profilePicture, contactInfo, summary, keySkills, techSkills} = profileData;
+  const { jobs, certifications, profileName, profileTitle, profilePicture, contactInfo, summary, keySkills, techSkills} = profileData;
   
   return (
     <div className="App">
@@ -22,7 +22,7 @@ function App() {
     techSkills={techSkills}
     contactInfo={contactInfo}
      />
-     <Content jobs={jobs} />
+    <Content jobs={jobs} certifications={certifications} />
     </div>
 
   );
