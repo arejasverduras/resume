@@ -10,6 +10,18 @@
   "header header"
   "sidebar main";
   margin: 10px auto;
+  grid-template-columns: 35% 65%;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    grid-template-areas: 
+    "header"
+    "main"
+    "sidebar";
+  margin: 10px auto;
+  grid-template-columns: 100%}
+  
 }
 
 
@@ -46,29 +58,23 @@ header {
 
 /* SideBar */
 
-/* .SideBar {
-  display: grid;
-  grid-template-areas: 
-  "contactDetails"
-  "Summary"
-  "keySkills"
-  "techSkills";
-  height: 600px;
-} */
+.SideBar {
+  border: 2px dotted yellow;
+}
 
 /* Widget */
 .Widget {
   padding: 20px;
+  border: 2px dotted maroon;
 }
 
 
 /* Widgets */
 
-.summary * {
+.summary {
   font-style:italic;
-  font-weight: 50px;
 }
 
-/* .keySkills {
-  grid-area: keySkills;
-} */
+.keySkills {
+  /* insert styles here */
+}

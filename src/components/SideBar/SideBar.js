@@ -6,19 +6,20 @@ export const SideBar = (props) => {
     const {summary, keySkills, techSkills,contactInfo, } = props;
 
     const summaryContent = summary;
-    const keySkillsContent = keySkills.map(skill => 
-            (
+    const keySkillsContent = keySkills.map(skill => (
                 <li>{skill}</li>
-            )
-        )
+            ));
 
-    
-    
+    const techSkillsContent = techSkills.map(tech => (
+        <li>{tech}</li>
+    ));
+
     return (
         <div className='SideBar'>
                  {/* return Widget component for each sidebar section */}
-                 <Widget className="summary" content={summaryContent}  />
-                 <Widget className="keySkills" title="Key Skills"  content={keySkillsContent} />
+                 <Widget name="summary" content={summaryContent}  />
+                 <Widget name="keySkills" title="Key Skills"  content={keySkillsContent} />
+                 <Widget name="techSkills" title="Tech Skills"  content={techSkillsContent} />
         </div>
     )
 }
