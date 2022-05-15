@@ -24,7 +24,6 @@
   
 }
 
-
 /* Header */
 
 header {
@@ -71,10 +70,27 @@ header {
 
 /* Widgets */
 
+.contact li {
+  list-style: none;
+
+}
+
+#tableKey {
+
+}
+
+#tableValue {
+
+}
+
 .summary {
   font-style:italic;
 }
 
 .keySkills {
-  /* insert styles here */
+  list-style: none;
+}
+
+.techSkills {
+  list-style: none;
 }

@@ -28,11 +28,10 @@ export const profileData = {
         tel: '+31614819860',
         mail: 'info@arejo.nl',
         location: 'The Hague, Netherlands',
-        links: {
-            github: 'https://github.com/arejasverduras',
-            linkedin: 'https://www.linkedin.com/in/michielroukens/',
-            portfolio: ''
-        }
+        github: <a href='https://github.com/arejasverduras'>github</a>,
+        linkedin: <a href='https://www.linkedin.com/in/michielroukens/'>LinkedIn</a>,
+        portfolio: ''
+
     },
     summary: 'Bad-ass coding Champion',
     keySkills: ['Building webapps from start to finish','Rocking React & Redux'],
