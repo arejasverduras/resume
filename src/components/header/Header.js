@@ -1,11 +1,8 @@
 import React from 'react';
-import { profileData } from '../../data';
 
 export const Header = (props) => {
-    const {profileName, profileTitle, profilePicture } = profileData;
+    const { profileName, profileTitle, profilePicture } = props;
     
-
-
     return (
         <header>
             <img src={profilePicture} alt={profileName} className="profilePicture"/>
