@@ -2,12 +2,13 @@ import React from 'react';
 import { profileData } from '../../data';
 
 export const Header = (props) => {
-    const [name, title] = profileData;
+    const {profileName, profileTitle } = profileData;
     
     return (
-        <>
-            <h2>Michiel</h2>
-            {/* <h2>{title}</h2> */}
-        </>
+        <header>
+            <img src="michiel.jpeg" alt={profileName}/>
+            <h2 className="headerName">{profileName}</h2>
+            <h2 className="headerTitle">{profileTitle}</h2>
+        </header>
     )
 }
