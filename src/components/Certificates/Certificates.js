@@ -13,9 +13,6 @@ export const Certificates = ({jobs, title, certifications}) => {
         </li>
 
 )
-
-
-
     return (
         <Widget 
             title={title}

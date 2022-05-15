@@ -17,8 +17,8 @@
   .App {
     grid-template-areas: 
     "header"
-    "main"
-    "sidebar";
+    "sidebar"
+    "main";
   margin: 10px auto;
   grid-template-columns: 100%}
   
@@ -35,7 +35,6 @@ header {
   padding: 20px;
 }
 .profilePicture {
-
   width: 200px;
   border-radius: 50%;
 }
@@ -75,9 +74,8 @@ header {
   font-weight: 500;
 }
 
-
-
 .summary {
+  grid-area: summary;
   font-style:italic;
 }
 
@@ -97,6 +95,12 @@ header {
   border: 3px dotted lavender;
 }
 
+/* JobsList */
+
+.jobsTable {
+  width: 100%;
+}
+
 .Experience {
   list-style: none;
 }
@@ -107,3 +111,6 @@ header {
   font-weight: bold;
 }
 
+.jobDescription {
+  padding-bottom: 10px;
+}

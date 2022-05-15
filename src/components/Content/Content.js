@@ -1,7 +1,6 @@
 import React from 'react';
 import { Certificates } from '../Certificates/Certificates';
 import { JobList } from '../JobList/JobList';
-import { Widget } from '../Widget/Widget';
 
 export const Content = ({jobs, certifications}) => {
 

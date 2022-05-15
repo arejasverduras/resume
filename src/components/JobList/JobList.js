@@ -5,17 +5,17 @@ export const JobList = ({jobs, type, title}) => {
     const jobsFilter = jobs.filter(job => job.type === type)
     
     const contentArray = 
-    <table>
+    <table className='jobsTable'>
 {        jobsFilter.map(jobObject => 
                 <>
                 <tr>
                     <td style={{"width": "30%"}}colSpan="1" className="jobPeriod">{jobObject.period}</td>
-                    <td className="jobTitle">{jobObject.title}</td>
-
+                    <td style={{"width": "70%"}}className="jobTitle">{jobObject.title}</td>
                 </tr>
                 <tr>
                     <td></td><td className='jobDescription'>{jobObject.description}</td>
                 </tr>
+                
                 </>
         )}
     </table>

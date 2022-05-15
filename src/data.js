@@ -8,7 +8,7 @@ export const profileData = {
         title: 'Freelance Developer',
         company: 'Arejas',
         location: 'The Hague, Netherlands',
-        description: 'Wordpress websites & webshops for different clients using Divi, Elmentor and WooCommerce'
+        description: 'Wordpress websites & webshops for different clients using Divi, Elementor and WooCommerce'
     }, {
         type: 'job',
         period: '2020',
@@ -18,7 +18,7 @@ export const profileData = {
         description: 'Converting cargovans to Campervans'
     }, {
         type: 'edu',
-        period: '2022',
+        period: '2022 - Present',
         company: 'codecademy',
         location: 'At home',
         title: 'FullStack Developer Career Path Course',
@@ -36,7 +36,7 @@ export const profileData = {
         location: 'The Hague, Netherlands',
         github: <a href='https://github.com/arejasverduras'>github</a>,
         linkedin: <a href='https://www.linkedin.com/in/michielroukens/'>LinkedIn</a>,
-        portfolio: ''
+        // portfolio: ''
 
     },
     summary: 'Bad-ass coding Champion',
