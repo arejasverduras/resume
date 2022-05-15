@@ -43,3 +43,32 @@ header {
   text-align: right;
   font-style: italic;
 }
+
+/* SideBar */
+
+/* .SideBar {
+  display: grid;
+  grid-template-areas: 
+  "contactDetails"
+  "Summary"
+  "keySkills"
+  "techSkills";
+  height: 600px;
+} */
+
+/* Widget */
+.Widget {
+  padding: 20px;
+}
+
+
+/* Widgets */
+
+.summary * {
+  font-style:italic;
+  font-weight: 50px;
+}
+
+/* .keySkills {
+  grid-area: keySkills;
+} */
