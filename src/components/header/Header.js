@@ -1,7 +1,8 @@
 import React from 'react';
+import { Search } from '../../features/Search';
 
 export const Header = (props) => {
-    const { profileName, profileTitle, profilePicture } = props;
+    const { profileName, profileTitle, profilePicture, searchTerm, setSearchTerm } = props;
     
     return (
         <header>
@@ -10,6 +11,9 @@ export const Header = (props) => {
                 <h2 className="headerName">{profileName}</h2>
                 <h2 className="headerTitle">{profileTitle}</h2>
             </div>
+            <Search 
+                value={searchTerm}
+                setSearchTerm={setSearchTerm}/>
         </header>
     )
 }

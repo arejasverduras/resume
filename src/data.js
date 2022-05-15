@@ -8,7 +8,7 @@ export const profileData = {
         title: 'Freelance Developer',
         company: 'Arejas',
         location: 'The Hague, NL',
-        description: 'Wordpress websites & webshops for different clients using Divi, Elementor and WooCommerce'
+        description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
     }, {
         type: 'job',
         period: '2020',
@@ -67,7 +67,7 @@ export const profileData = {
         company: 'codecademy',
         location: '',
         title: 'FullStack Developer Career Path Course',
-        description: 'Become a coding champion'
+        description: 'Becoming a Full-Stack developer learning HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github.'
     },
     {
         type: 'edu',
