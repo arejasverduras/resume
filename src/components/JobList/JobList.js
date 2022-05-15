@@ -9,11 +9,14 @@ export const JobList = ({jobs, type, title}) => {
 {        jobsFilter.map(jobObject => 
                 <>
                 <tr>
-                    <td style={{"width": "30%"}}colSpan="1" className="jobPeriod">{jobObject.period}</td>
+                    <td style={{"width": "30%"}} className="jobPeriod">{jobObject.period}</td>
                     <td style={{"width": "70%"}}className="jobTitle">{jobObject.title}</td>
                 </tr>
                 <tr>
-                    <td></td><td className='jobDescription'>{jobObject.description}</td>
+                <td className='jobCompany'>{jobObject.company}<br/>{jobObject.location}</td><td colSpan="1" className='jobDescription'>{jobObject.description}</td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
                 </tr>
                 
                 </>

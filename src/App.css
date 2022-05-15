@@ -111,6 +111,13 @@ header {
   font-weight: bold;
 }
 
+.jobCompany {
+  font-style: italic;
+}
 .jobDescription {
   padding-bottom: 10px;
+}
+
+td {
+  vertical-align: top;
 }
