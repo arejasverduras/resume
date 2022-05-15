@@ -14,7 +14,7 @@ export const Content = ({jobs, certifications}) => {
                 type={"job"} />
             <JobList 
                 title={"Education"} 
-                name={"Experience"} 
+                name={"Education"} 
                 jobs={jobs} 
                 type={"edu"} />
             <Certificates 

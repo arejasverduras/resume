@@ -8,6 +8,7 @@
   max-width: 1024px;
   grid-template-areas: 
   "header header"
+  "sidebar searchField"
   "sidebar main";
   margin: 10px auto;
   grid-template-columns: 35% 65%;
@@ -18,6 +19,7 @@
     grid-template-areas: 
     "header"
     "sidebar"
+    "searchField"
     "main";
   margin: 10px auto;
   grid-template-columns: 100%}
@@ -54,9 +56,12 @@ header {
   font-style: italic;
 }
 
+
+
 /* SideBar */
 
 .SideBar {
+  grid-area: sidebar;
   border: 2px dotted yellow;
 }
 
@@ -95,6 +100,16 @@ header {
   border: 3px dotted lavender;
 }
 
+/* Search */
+
+.searchField {
+  grid-area: searchField;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  margin: 20px;
+  max-height: 50px;
+}
 /* JobsList */
 
 .jobsTable {

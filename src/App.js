@@ -5,6 +5,7 @@ import { profileData } from './data';
 import { Header } from './components/header/Header';
 import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
+import { Search } from './features/Search';
 
 function App() {
   const { 
@@ -20,6 +21,7 @@ function App() {
   
     const [searchTerm, setSearchTerm] = useState('')
 
+
     const availableJobs = jobs.filter(job => 
       (job.description.toLowerCase().includes(searchTerm.toLowerCase()) 
         || job.title.toLowerCase().includes(searchTerm.toLowerCase()) 
@@ -32,6 +34,10 @@ function App() {
         profileName={profileName} 
         profileTitle={profileTitle}
         profilePicture={profilePicture} 
+      />
+      <Search 
+        value={searchTerm}
+        setSearchTerm={setSearchTerm}
       />
   <SideBar 
     summary={summary}
