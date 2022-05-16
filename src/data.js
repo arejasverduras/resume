@@ -67,7 +67,7 @@ export const profileData = {
         company: 'codecademy',
         location: '',
         title: 'FullStack Developer Career Path Course',
-        description: 'Becoming a Full-Stack developer learning HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github.'
+        description: 'Becoming a Full-Stack web developer learning to build web-apps using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github.'
     },
     {
         type: 'edu',
@@ -93,7 +93,7 @@ export const profileData = {
         date: "Jan '21"
     }],
     contactInfo: {
-        tel: '+31614819860',
+        phone: '+31614819860',
         mail: 'info@arejo.nl',
         location: 'The Hague, Netherlands',
         github: <a href='https://github.com/arejasverduras'>github</a>,

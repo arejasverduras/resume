@@ -5,7 +5,6 @@ import { profileData } from './data';
 import { Header } from './components/header/Header';
 import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
-import { Search } from './features/Search';
 
 function App() {
   const { 
@@ -39,6 +38,20 @@ function App() {
         job.location.toLowerCase().includes(searchTerm.toLowerCase())));
 
 
+
+      const contactArray = Object.entries(contactInfo);
+      const contactFiltered = contactArray.filter(([key, value]) => key.includes(searchTerm));
+      const filteredContacts = Object.fromEntries(contactFiltered);
+  //     const contactTable = 
+  //     <table>
+  // {        contactArray.map(([key, value]) => 
+  //                 <tr>
+  //                     <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
+  //                     <td className="contactValue">{value}</td>
+  //                 </tr>              
+  //         )}
+  //     </table>
+
   return (
     <div className="App">
       <Header 
@@ -52,7 +65,7 @@ function App() {
     summary={summary}
     keySkills={searchFilter(keySkills)}
     techSkills={searchFilter(techSkills)}
-    contactInfo={contactInfo}
+    contactInfo={filteredContacts}
      />
     <Content jobs={availableJobs} certifications={certifications} />
     </div>

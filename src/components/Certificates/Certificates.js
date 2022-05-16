@@ -8,7 +8,7 @@ export const Certificates = ({jobs, title, certifications}) => {
             certifications.map(cert => 
         <li>
             <b>{cert.title} </b>
-                 | {cert.description} | 
+                 | {cert.description} | {cert.institute} | 
             <span style={{"fontWeight": 300, "color": "grey"}}> {cert.date}</span>
         </li>
 
