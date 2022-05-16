@@ -9,6 +9,7 @@
   grid-template-areas: 
   "header header"
   "contact main"
+  "summary main"
   "sidebar main";
   margin: 10px auto;
   grid-template-columns: 35% 65%;
@@ -19,6 +20,7 @@
     grid-template-areas: 
     "header"
     "contact"
+    "summary"
     "main"
     "sidebar";
   margin: 10px auto;

@@ -3,7 +3,7 @@ import { Widget } from '../Widget/Widget';
 
 export const SideBar = (props) => {
     // calculate content for Widget components
-    const {summary, keySkills, techSkills,mktSkills, addSkills,languages, hobbies,contactInfo, } = props;
+    const {keySkills, techSkills,mktSkills, addSkills,languages, hobbies,} = props;
 
     const skillMaker = (skillArray) => {
         return skillArray.map(skill => (
@@ -14,7 +14,6 @@ export const SideBar = (props) => {
 
     return (
         <div className='SideBar'>
-                 <Widget name="summary" content={summary}  />
                  <Widget name="keySkills" title="Key Skills"  content={skillMaker(keySkills)} />
                  <Widget name="techSkills" title="Tech Skills"  content={skillMaker(techSkills)} />
                  <Widget name="mktSkills" title="Marketing Skills"  content={skillMaker(mktSkills)} />

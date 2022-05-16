@@ -6,6 +6,7 @@ import { Header } from './components/header/Header';
 import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
+import { Summary } from './components/Summary/Summary';
 
 function App() {
   const { 
@@ -63,8 +64,8 @@ hobbies} = profileData;
         setSearchTerm={setSearchTerm} 
       />
       <Contact contactInfo={filteredContacts} />
+      <Summary summary={summary} />
   <SideBar 
-    summary={summary}
     keySkills={searchFilter(keySkills)}
     techSkills={searchFilter(techSkills)}
     mktSkills={searchFilter(mktSkills)}
