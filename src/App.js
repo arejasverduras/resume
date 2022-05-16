@@ -54,9 +54,22 @@ hobbies} = profileData;
           cert.date.toLowerCase().includes(searchTerm.toLowerCase())
         ))) 
 
-      const contactArray = Object.entries(contactInfo);
-      const contactFiltered = contactArray.filter(([key, value]) => key.includes(searchTerm));
-      const filteredContacts = Object.fromEntries(contactFiltered);
+
+      // const contactFiltered = contactArray.filter(([key, value]) => key.toLowerCase().includes(searchTerm.toLowerCase()));
+
+      const contactSearch = (data, cat) => {
+        const contactArray = Object.entries(data);
+
+        let result;
+
+        if (cat.includes(searchTerm.toLowerCase())){
+          result = contactArray;
+      } else {
+        result = contactArray.filter(([key, value]) => key.toLowerCase().includes(searchTerm.toLowerCase()));
+      }
+
+      return result;
+    }
 
 
   return (
@@ -68,7 +81,7 @@ hobbies} = profileData;
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm} 
       />
-      <Contact contactInfo={filteredContacts} />
+      <Contact contactInfo={contactSearch(contactInfo, 'contact')} />
       <Summary summary={summary} />
   <SideBar 
     keySkills={searchFilter(keySkills, "key skills")}

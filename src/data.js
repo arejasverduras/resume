@@ -95,10 +95,10 @@ export const profileData = {
     }],
     contactInfo: {
         phone: '+31614819860',
-        mail: 'info@arejo.nl',
+        email: 'info@arejo.nl',
         location: 'The Hague, Netherlands',
-        github: <a href='https://github.com/arejasverduras'>github</a>,
-        linkedin: <a href='https://www.linkedin.com/in/michielroukens/'>LinkedIn</a>,
+        github: <a href='https://github.com/arejasverduras' target='_blank' rel="noreferrer">github</a>,
+        linkedin: <a href='https://www.linkedin.com/in/michielroukens/' target='_blank' rel="noreferrer">LinkedIn</a>,
         // portfolio: ''
 
     },
