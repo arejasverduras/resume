@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: rgba(255, 255, 255, 0.888);
 }
 body {
   background: linear-gradient(0.25turn, #ff1b6b, #45caff);
@@ -95,12 +96,13 @@ header {
 .Widget {
   /* background-color: rgb(41, 237, 194); */
   margin: 2px;
-  border: 2px solid whitesmoke;
+  /* border: 2px solid whitesmoke; */
   left: 0px;
   top: 0px;
-  background-color: whitesmoke;
+  background-color: rgb(49, 48, 48);
   box-shadow: #ff1b6b 5px 5px;
   transition: left 1s, top 1s;
+  letter-spacing: 0.1em;
 }
 
 .Widget:hover {
@@ -108,13 +110,16 @@ header {
   left: -15px;
   top: -10px;
   box-shadow: #45caff 5px 5px;
+  /* box-shadow: #ff1b6b -5px -5px; */
+  border-left: #ff1b6b solid 5px;
+  border-top: #ff1b6b solid 5px;
   z-index: 3;
   
 }
 
 .widgetTitle {
   /* insert widget Title styles here */
-  color: darkslategray;
+  color: #ff1b6b;
   padding-bottom: 7px;
   border-bottom: 2px solid #45caff;
   margin-bottom: 7px;
