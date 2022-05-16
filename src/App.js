@@ -8,6 +8,7 @@ import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
 import { Summary } from './components/Summary/Summary';
 
+
 function App() {
   const { 
     jobs, 
