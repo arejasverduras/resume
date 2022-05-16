@@ -83,9 +83,9 @@ hobbies} = profileData;
 
         if (toTest.length === 0){
           console.log('no children!');
-          findWidget.style.display='none'
+          findWidget.style.display="none";
         } else {
-          findWidget.style.display='grid'
+          findWidget.style.display='grid';
         }
       })
 

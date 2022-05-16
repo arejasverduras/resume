@@ -12,7 +12,7 @@
   "summary main"
   "sidebar main";
   margin: 10px auto;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
 }
 
 @media screen and (max-width: 500px) {
@@ -104,13 +104,13 @@ header {
 .Widget {
   padding: 20px;
   border: 2px dotted maroon;
-
 }
 
 .summary, .contact, .keySkills, .techSkills, .mktSkills, .addSkills, .languages, .hobbies{
   list-style: none;
   padding: 20px;
   border: 2px dotted maroon;
+  transition: visibility 1s;
 }
 
 /* Widgets */
