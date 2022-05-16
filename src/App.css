@@ -23,9 +23,12 @@ body {
   "contact main"
   "summary main"
   "sidebar main";
+
   margin: 10px auto;
   grid-template-columns: 30% 70%;
-
+  padding-bottom: 30px;
+  border-bottom: 5px dotted rgba(255, 255, 255, 0.888);
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 500px) {
@@ -50,27 +53,46 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-
+  padding: 30px;
+  border-bottom: 5px dotted rgba(255, 255, 255, 0.888);
+  margin-bottom: 30px;
 }
 .profilePicture {
   width: 200px;
   border-radius: 50%;
+  box-shadow: rgb(49, 48, 48) -5px 5px;
+  /* border-top: 5px solid #ff1b6b;
+  border-left: 5px solid #45caff; */
 }
 
 .titleHolder {
   justify-items: flex-end;
   align-items: center;
+  padding: 7px;
+  border-left: 5px solid #ff1b6b;
+  border-top: 5px solid #ff1b6b;
+  box-shadow: #45caff 5px 5px;
+  background-color: rgb(49, 48, 48);
 }
 
 .headerName {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .headerTitle {
-  font-size: 16px;
+  font-size: 22px;
   text-align: right;
   font-style: italic;
+}
+
+@media  screen and (max-width: 500px) {
+  .headerName {
+    font-size: 24px;
+  }
+  
+  .headerTitle {
+    font-size: 20px;
+  }
 }
 
 /* Search */
@@ -206,3 +228,5 @@ td {
 #certItem {
   list-style: disc;
 }
+
+/* Button */
