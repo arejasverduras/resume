@@ -67,12 +67,11 @@ hobbies} = profileData;
 
     // hide sections not relevant for search
     useEffect(()=>{
-
       let widgetsToHide = ['contact','Experience','Education','certifications','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
 
       widgetsToHide.forEach((widget)=>{
         let findWidget = document.getElementsByClassName(widget)[0];
-        console.log(findWidget);
+        
 
         let toTest;
         if (widget === 'contact' || widget === 'Experience' || widget === 'Education'){
@@ -82,7 +81,7 @@ hobbies} = profileData;
         }
 
         if (toTest.length === 0){
-          console.log('no children!');
+          
           findWidget.style.display="none";
         } else {
           findWidget.style.display='grid';
@@ -91,7 +90,6 @@ hobbies} = profileData;
 
     },[searchTerm])
 
-
   return (
     <div className="App">
       <Header 
@@ -99,7 +97,7 @@ hobbies} = profileData;
         profileTitle={profileTitle}
         profilePicture={profilePicture}
         searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm} 
+        setSearchTerm={setSearchTerm}
       />
       <Contact contactInfo={search(contactInfo, 'contact','object')} />
       <Summary summary={summary} />

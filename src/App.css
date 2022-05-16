@@ -1,10 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, 0.888);
+  
 }
 body {
   background: linear-gradient(0.25turn, #ff1b6b, #45caff);
+  color: rgba(255, 255, 255, 0.888);
 }
 
 .colors {
@@ -25,7 +26,7 @@ body {
   "sidebar main";
 
   margin: 10px auto;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 35% 65%;
   padding-bottom: 30px;
   border-bottom: 5px dotted rgba(255, 255, 255, 0.888);
   margin-bottom: 30px;
@@ -170,17 +171,13 @@ header {
   /* border: 2px dotted yellow; */
 }
 
-
-
 .summary, .contact, .keySkills, .techSkills, .mktSkills, .addSkills, .languages, .hobbies{
   list-style: none;
-  padding: 20px;
+  padding: 30px;
   /* border: 2px dotted maroon; */
-}
+  }
 
 /* Widgets */
-
-
 .keySkills {
   /* grid-area: keySkills; */
 }
@@ -204,7 +201,10 @@ header {
 }
 
 .Experience, .Education, .certifications {
-  padding: 20px;
+  padding: 30px;
+  color:rgb(49, 48, 48);
+  background-color: rgba(255, 255, 255, 0.888);
+
 }
 
 
