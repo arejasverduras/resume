@@ -81,6 +81,7 @@ header {
   border: 1px solid gray;
   margin: 20px;
   max-height: 50px;
+  color: rgb(49, 48, 48);
 }
 
 @media screen and (max-width: 500px) {
