@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+/* body {
+  background-color: aquamarine;
+} */
 
 .App {
   display: grid;
@@ -13,6 +16,7 @@
   "sidebar main";
   margin: 10px auto;
   grid-template-columns: 30% 70%;
+  /* background-color: aliceblue; */
 }
 
 @media screen and (max-width: 500px) {
@@ -104,6 +108,10 @@ header {
 .Widget {
   padding: 20px;
   border: 2px dotted maroon;
+}
+
+.widgetTitle {
+  /* insert widget Title styles here */
 }
 
 .summary, .contact, .keySkills, .techSkills, .mktSkills, .addSkills, .languages, .hobbies{
