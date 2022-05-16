@@ -5,6 +5,7 @@ import { profileData } from './data';
 import { Header } from './components/header/Header';
 import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
+import {Contact} from './components/Contact/Contact';
 
 function App() {
   const { 
@@ -16,7 +17,11 @@ function App() {
     contactInfo, 
     summary, 
     keySkills, 
-    techSkills} = profileData;
+    techSkills,
+  mktSkills,
+addSkills,
+languages,
+hobbies} = profileData;
   
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
@@ -57,10 +62,15 @@ function App() {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm} 
       />
+      <Contact contactInfo={filteredContacts} />
   <SideBar 
     summary={summary}
     keySkills={searchFilter(keySkills)}
     techSkills={searchFilter(techSkills)}
+    mktSkills={searchFilter(mktSkills)}
+    addSkills={searchFilter(addSkills)}
+    languages={searchFilter(languages)}
+    hobbies={searchFilter(hobbies)}
     contactInfo={filteredContacts}
      />
     <Content jobs={availableJobs} certifications={availableCertifications} />

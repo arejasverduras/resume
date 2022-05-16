@@ -6,7 +6,7 @@ export const Certificates = ({jobs, title, certifications}) => {
 
     const certificateList = 
             certifications.map(cert => 
-        <li>
+        <li id="certItem">
             <b>{cert.title} </b>
                  | {cert.description} | {cert.institute} | 
             <span style={{"fontWeight": 300, "color": "grey"}}> {cert.date}</span>

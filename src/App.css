@@ -8,7 +8,7 @@
   max-width: 1024px;
   grid-template-areas: 
   "header header"
-  "sidebar searchField"
+  "contact main"
   "sidebar main";
   margin: 10px auto;
   grid-template-columns: 35% 65%;
@@ -18,9 +18,9 @@
   .App {
     grid-template-areas: 
     "header"
-    "sidebar"
-    "searchField"
-    "main";
+    "contact"
+    "main"
+    "sidebar";
   margin: 10px auto;
   grid-template-columns: 100%}
   
@@ -32,6 +32,7 @@ header {
   border: 2px dotted grey;
   grid-area: header;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -56,6 +57,36 @@ header {
   font-style: italic;
 }
 
+/* Search */
+
+.searchField {
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  margin: 20px;
+  max-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .searchField {
+    min-width: 80%;
+  }
+  
+}
+
+/* Contact */
+
+.contact {
+  grid-area: contact;
+}
+.contactKey {
+  font-weight: 500;
+}
+
+.summary {
+  grid-area: summary;
+  font-style:italic;
+}
 
 
 /* SideBar */
@@ -69,27 +100,23 @@ header {
 .Widget {
   padding: 20px;
   border: 2px dotted maroon;
+  list-style: none;
 }
 
 
 /* Widgets */
 
-/* Contact */
-.contactKey {
-  font-weight: 500;
-}
 
-.summary {
-  grid-area: summary;
-  font-style:italic;
-}
+
+
+
 
 .keySkills {
-  list-style: none;
+  grid-area: keySkills;
 }
 
 .techSkills {
-  list-style: none;
+  /* list-style: none; */
 }
 
 /* Content */
@@ -100,16 +127,7 @@ header {
   border: 3px dotted lavender;
 }
 
-/* Search */
 
-.searchField {
-  grid-area: searchField;
-  padding: 8px;
-  border-radius: 15px;
-  border: 1px solid gray;
-  margin: 20px;
-  max-height: 50px;
-}
 /* JobsList */
 
 .jobsTable {
@@ -135,4 +153,8 @@ header {
 
 td {
   vertical-align: top;
+}
+
+#certItem {
+  list-style: disc;
 }
