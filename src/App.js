@@ -68,15 +68,20 @@ hobbies} = profileData;
     // hide sections not relevant for search
     useEffect(()=>{
 
-      // let toHide2 = document.getElementsByClassName("contact")[0]
-      // console.log(toHide2)
-
-      let widgetsToHide = ['contact','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
+      let widgetsToHide = ['contact','Experience','Education','certifications','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
 
       widgetsToHide.forEach((widget)=>{
         let findWidget = document.getElementsByClassName(widget)[0];
         console.log(findWidget);
-        if (findWidget.lastElementChild.childNodes.length === 0){
+
+        let toTest;
+        if (widget === 'contact' || widget === 'Experience' || widget === 'Education'){
+          toTest = findWidget.lastElementChild.firstChild.childNodes;
+        } else {
+          toTest = findWidget.lastElementChild.childNodes;
+        }
+
+        if (toTest.length === 0){
           console.log('no children!');
           findWidget.style.display='none'
         } else {
@@ -84,13 +89,6 @@ hobbies} = profileData;
         }
       })
 
-
-      // if (toHide2.firstChild.nextElementSibling.firstChild.childNodes.length === 0){
-      //   console.log('no children!');
-      //   toHide2.style.display='none'
-      // } else {
-      //   toHide2.style.display='grid'
-      // }
     },[searchTerm])
 
 
