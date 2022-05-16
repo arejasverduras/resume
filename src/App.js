@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 
 import { profileData } from './data';
@@ -64,6 +64,35 @@ hobbies} = profileData;
         }
       return result;
     }
+
+    // hide sections not relevant for search
+    useEffect(()=>{
+
+      // let toHide2 = document.getElementsByClassName("contact")[0]
+      // console.log(toHide2)
+
+      let widgetsToHide = ['contact','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
+
+      widgetsToHide.forEach((widget)=>{
+        let findWidget = document.getElementsByClassName(widget)[0];
+        console.log(findWidget);
+        if (findWidget.lastElementChild.childNodes.length === 0){
+          console.log('no children!');
+          findWidget.style.display='none'
+        } else {
+          findWidget.style.display='grid'
+        }
+      })
+
+
+      // if (toHide2.firstChild.nextElementSibling.firstChild.childNodes.length === 0){
+      //   console.log('no children!');
+      //   toHide2.style.display='none'
+      // } else {
+      //   toHide2.style.display='grid'
+      // }
+    },[searchTerm])
+
 
   return (
     <div className="App">
