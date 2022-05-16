@@ -18,6 +18,7 @@ function App() {
     keySkills, 
     techSkills} = profileData;
   
+      // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
 
     const searchFilter = (data) => {
@@ -26,9 +27,7 @@ function App() {
       if (result === []) {
         return data
       }
-
       return result;
-
     }
 
     const availableJobs = jobs.filter(job => 
@@ -37,20 +36,17 @@ function App() {
         || job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.location.toLowerCase().includes(searchTerm.toLowerCase())));
 
-
+        const availableCertifications = certifications.filter(cert => (
+          cert.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          cert.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          cert.institute.toLowerCase().includes(searchTerm.toLowerCase() ||
+          cert.date.toLowerCase().includes(searchTerm.toLowerCase())
+        ))) 
 
       const contactArray = Object.entries(contactInfo);
       const contactFiltered = contactArray.filter(([key, value]) => key.includes(searchTerm));
       const filteredContacts = Object.fromEntries(contactFiltered);
-  //     const contactTable = 
-  //     <table>
-  // {        contactArray.map(([key, value]) => 
-  //                 <tr>
-  //                     <td style={{"width": "30%"}}colSpan="1" className="contactKey">{key}</td>
-  //                     <td className="contactValue">{value}</td>
-  //                 </tr>              
-  //         )}
-  //     </table>
+
 
   return (
     <div className="App">
@@ -67,10 +63,14 @@ function App() {
     techSkills={searchFilter(techSkills)}
     contactInfo={filteredContacts}
      />
-    <Content jobs={availableJobs} certifications={certifications} />
+    <Content jobs={availableJobs} certifications={availableCertifications} />
     </div>
 
   );
+
+  
+    
+
 }
 
 export default App;
