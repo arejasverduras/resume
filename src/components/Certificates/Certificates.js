@@ -16,7 +16,7 @@ export const Certificates = ({jobs, title, certifications}) => {
     return (
         <Widget 
             title={title}
-            name={certifications}
+            name={"certifications"}
             content={certificateList}
         />
      )

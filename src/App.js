@@ -72,7 +72,6 @@ hobbies} = profileData;
     addSkills={searchFilter(addSkills)}
     languages={searchFilter(languages)}
     hobbies={searchFilter(hobbies)}
-    contactInfo={filteredContacts}
      />
     <Content jobs={availableJobs} certifications={availableCertifications} />
     </div>
