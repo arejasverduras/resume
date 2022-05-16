@@ -3,14 +3,14 @@ export const profileData = {
     profileTitle: 'React Developer',
     profilePicture: "./images/michiel.jpeg",
     jobs: [{
-        type: 'job',
+        type: 'experience',
         period: '2021/2022',
         title: 'Freelance Developer',
         company: 'Arejas',
         location: 'The Hague, NL',
         description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
     }, {
-        type: 'job',
+        type: 'experience',
         period: '2020',
         title: 'Campervan builder',
         company: 'Freelance',
@@ -26,7 +26,7 @@ export const profileData = {
     //     description: ''
     // },
     {
-        type: 'job',
+        type: 'experience',
         period: '2010-2019',
         title: 'mijnJohan.nl',
         company: 'privately held',
@@ -35,7 +35,7 @@ export const profileData = {
 
     },
     {
-        type: 'job',
+        type: 'experience',
         period: '2016-2017',
         title: 'Growth Hacker',
         company: 'Camptoo.nl',
@@ -45,7 +45,7 @@ export const profileData = {
     },
 
     {
-        type: 'job',
+        type: 'experience',
         period: '2015-2016',
         title: 'First marketing Officer',
         company: 'Yippie.nl',
@@ -54,7 +54,7 @@ export const profileData = {
 
     },
     {
-        type: 'job',
+        type: 'experience',
         period: '2011-2014',
         title: 'Ceo & Founder',
         company: 'OWNR',
@@ -62,7 +62,7 @@ export const profileData = {
         description: 'Internet startup in action sports. Verantwoordelijk voor marketing, verkoop, investeerders, productontwikkeling en algemeen succes. Samenwerkingen met onder andere Quiksilver / DC shoes en Nitro Snowboards.'
     },
     {
-        type: 'edu',
+        type: 'education',
         period: '2022 - Present',
         company: 'codecademy',
         location: '',
@@ -70,7 +70,7 @@ export const profileData = {
         description: 'Becoming a Full-Stack web developer learning to build web-apps using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github.'
     },
     {
-        type: 'edu',
+        type: 'education',
         period: '2008-2010',
         company: 'WdKa',
         location: 'Rotterdam',
@@ -78,7 +78,7 @@ export const profileData = {
         description: 'Art Direction, concepting & realisation. Royal Arts Academy of Rotterdam.'
     },
     {
-        type: 'edu',
+        type: 'education',
         period: '1998-2004',
         company: 'Ashram College',
         location: 'Alphen aan den rijn',
@@ -87,6 +87,7 @@ export const profileData = {
     },
 ],
     certifications: [{
+        type: 'certification',
         title: 'Back-end app with Javascript',
         description: "Write API's with Node, Express & SQL",
         institute: 'Codecademy',

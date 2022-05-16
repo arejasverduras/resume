@@ -11,12 +11,12 @@ export const Content = ({jobs, certifications}) => {
                 title={"Experience"} 
                 name={"Experience"} 
                 jobs={jobs} 
-                type={"job"} />
+                type={"experience"} />
             <JobList 
                 title={"Education"} 
                 name={"Education"} 
                 jobs={jobs} 
-                type={"edu"} />
+                type={"education"} />
             <Certificates 
                 title={"Certifications"}
                 name={"Certifications"}

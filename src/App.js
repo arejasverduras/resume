@@ -40,12 +40,14 @@ hobbies} = profileData;
     }
 
     const availableJobs = jobs.filter(job => 
-      (job.description.toLowerCase().includes(searchTerm.toLowerCase()) 
+      (job.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      job.type.toLowerCase().includes(searchTerm.toLowerCase()) 
         || job.title.toLowerCase().includes(searchTerm.toLowerCase()) 
         || job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.location.toLowerCase().includes(searchTerm.toLowerCase())));
 
         const availableCertifications = certifications.filter(cert => (
+          cert.type.toLowerCase().includes(searchTerm.toLowerCase()) ||
           cert.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
           cert.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
           cert.institute.toLowerCase().includes(searchTerm.toLowerCase() ||
@@ -69,10 +71,10 @@ hobbies} = profileData;
       <Contact contactInfo={filteredContacts} />
       <Summary summary={summary} />
   <SideBar 
-    keySkills={searchFilter(keySkills, "skills")}
-    techSkills={searchFilter(techSkills, "skills")}
-    mktSkills={searchFilter(mktSkills, "skills")}
-    addSkills={searchFilter(addSkills, "skills")}
+    keySkills={searchFilter(keySkills, "key skills")}
+    techSkills={searchFilter(techSkills, "tech skills")}
+    mktSkills={searchFilter(mktSkills, "marketing skills")}
+    addSkills={searchFilter(addSkills, "additional skills")}
     languages={searchFilter(languages, "languages")}
     hobbies={searchFilter(hobbies, "hobbies")}
      />
