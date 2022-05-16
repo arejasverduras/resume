@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(41, 237, 194);
+  background-color: #b9dcf2
 }
 
 .colors {
@@ -51,7 +51,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   /* background: linear-gradient(0.75turn, #caefd7,#f5bfd7, #abc9e9); */
-  background: linear-gradient(0.25turn, #feef48,#feef48,rgb(41, 237, 194));
+  background: linear-gradient(0.25turn, #b9dcf2,#ea5753);
 }
 .profilePicture {
   width: 200px;
@@ -96,11 +96,11 @@ header {
 .Widget {
   /* background-color: rgb(41, 237, 194); */
   margin: 2px;
-  border: 2px solid maroon;
+  border: 2px solid whitesmoke;
   left: 0px;
   top: 0px;
   background-color: whitesmoke;
-  box-shadow: rgb(41, 237, 194) 5px 5px;
+  box-shadow: #ea5753 5px 5px;
   transition: left 1s, top 1s;
 }
 
@@ -108,7 +108,7 @@ header {
   position: relative;
   left: -15px;
   top: -10px;
-  box-shadow: #feef48 5px 5px;
+  box-shadow: #ea5753 5px 5px;
   z-index: 3;
   
 }
@@ -117,7 +117,7 @@ header {
   /* insert widget Title styles here */
   color: darkslategray;
   padding-bottom: 7px;
-  border-bottom: 2px solid maroon;
+  border-bottom: 2px solid #ea5753;
   margin-bottom: 7px;
 }
 
