@@ -2,13 +2,53 @@ import React, { useEffect } from 'react';
 import { Search } from '../../features/Search';
 
 export const Header = (props) => {
-    const { profileName, profileTitle, profilePicture, searchTerm, setSearchTerm } = props;
+    const { profileName, profileTitle, profilePicture, searchTerm, setSearchTerm, flipped, setFlipped } = props;
     
+    let flip = false;
+    // const flipIt = (what)=>{
+
+    //     setFlipped(what);
+    // }
+
     const handleClick = () =>{
         console.log('click');
-        let bg = document.getElementsByTagName('header')[0];
-        console.log(bg);
-        bg.style.backgroundColor="black";
+        const body = document.body;
+        const header = document.getElementsByTagName('header')[0];
+        let widgetsToFlip = ['contact','summary','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
+
+        widgetsToFlip.forEach((widget)=>{
+          let findWidget = document.getElementsByClassName(widget)[0];
+        if (!flip) 
+            {findWidget.style.backgroundColor="rgba(255, 255, 255, 0.888)";
+         findWidget.style.color="rgb(49, 48, 48)";}
+        else if (flip)
+            {findWidget.style.backgroundColor="rgb(49, 48, 48)";
+            findWidget.style.color="rgba(255, 255, 255, 0.888)";}
+        })
+
+    let contentToFlip = ['Experience','Education','certifications']
+        contentToFlip.forEach((widget)=>{
+            let findWidget = document.getElementsByClassName(widget)[0];
+        if (flip) 
+            {findWidget.style.backgroundColor="rgba(255, 255, 255, 0.888)";
+        findWidget.style.color="rgb(49, 48, 48)";}
+        else if (!flip)
+            {findWidget.style.backgroundColor="rgb(49, 48, 48)";
+            findWidget.style.color="rgba(255, 255, 255, 0.888)";}
+      })
+
+
+        if (!flip) 
+        {
+            header.style.background="linear-gradient(0.25turn, #45caff, #ff1b6b)";
+            body.style.background="linear-gradient(0.25turn, #45caff, #ff1b6b)"
+            flip = true;
+        } else if (flip) {
+        header.style.background="linear-gradient(0.25turn, #ff1b6b, #45caff)";
+        body.style.background="linear-gradient(0.25turn, #ff1b6b, #45caff)"
+        flip = false;
+    }
+    console.log('flipAfter '+flip)
     }
 
     useEffect(()=>{

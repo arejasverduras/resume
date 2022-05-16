@@ -27,6 +27,7 @@ hobbies} = profileData;
   
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
+    const [flipped, setFlipped] = useState();
 
     const search = (data, cat,type) => {
       let result;
@@ -98,6 +99,8 @@ hobbies} = profileData;
         profilePicture={profilePicture}
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
+        flipped={flipped}
+        setFlipped={setFlipped}
       />
       <Contact contactInfo={search(contactInfo, 'contact','object')} />
       <Summary summary={summary} />
