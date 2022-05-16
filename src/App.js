@@ -27,12 +27,15 @@ hobbies} = profileData;
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
 
-    const searchFilter = (data) => {
-      let result =  data.filter(item => item.toLowerCase().includes(searchTerm.toLowerCase()))
+    const searchFilter = (data, cat) => {
+      let result;
 
-      if (result === []) {
-        return data
+      if (cat.includes(searchTerm.toLowerCase())){
+        result = data;
+      } else {
+        result =  data.filter(item =>  item.toLowerCase().includes(searchTerm.toLowerCase()))
       }
+
       return result;
     }
 
@@ -66,12 +69,12 @@ hobbies} = profileData;
       <Contact contactInfo={filteredContacts} />
       <Summary summary={summary} />
   <SideBar 
-    keySkills={searchFilter(keySkills)}
-    techSkills={searchFilter(techSkills)}
-    mktSkills={searchFilter(mktSkills)}
-    addSkills={searchFilter(addSkills)}
-    languages={searchFilter(languages)}
-    hobbies={searchFilter(hobbies)}
+    keySkills={searchFilter(keySkills, "skills")}
+    techSkills={searchFilter(techSkills, "skills")}
+    mktSkills={searchFilter(mktSkills, "skills")}
+    addSkills={searchFilter(addSkills, "skills")}
+    languages={searchFilter(languages, "languages")}
+    hobbies={searchFilter(hobbies, "hobbies")}
      />
     <Content jobs={availableJobs} certifications={availableCertifications} />
     </div>
