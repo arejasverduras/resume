@@ -189,31 +189,26 @@ header {
 
 @keyframes borderFlow {
   from {
-    border: 1px solid #45caff;
+    border: 2px solid #45caff;
   }
   20% {
-
-    border-left: 1px solid #ff1b6b
+    border-left: 2px solid #ff1b6b
   }
 
   40% {
-
-    border-bottom: 1px solid #ff1b6b
+    border-bottom: 2px solid #ff1b6b
   }
 
   60% {
-
-    border-right: 1px solid #ff1b6b
+    border-right: 2px solid #ff1b6b
   }
 
   80% {
-
-    border-top: 1px solid #ff1b6b;
+    border-top: 2px solid #ff1b6b;
   }
 
   to {
-
-    border: 1px solid #45caff;
+    border: 2px solid #45caff;
   }
 }
 
