@@ -4,15 +4,21 @@ export const Search = ({searchTerm, setSearchTerm}) => {
     const handleChange = ({target}) => {
         setSearchTerm(target.value)
     }
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        return searchTerm;
+    }
     
     return (
-        <input 
-            type="text"
-            value={searchTerm} 
-            onChange={handleChange} 
-            className="searchField"
-            placeholder='Search'
-            onSubmit={handleChange}>
-        </input>
+        <form onSubmit={handleClick}>
+            <input 
+                type="text"
+                value={searchTerm} 
+                onChange={handleChange} 
+                className="searchField"
+                placeholder='Search'
+                />
+        </form>
     )
 }
