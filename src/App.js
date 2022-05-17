@@ -70,8 +70,8 @@ hobbies} = profileData;
     useEffect(()=>{
 
       let widgetsToHide = flipped?
-         ['contact','ExperienceFlipped','EducationFlipped','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'] 
-         :['contact','Experience','Education','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'];
+         ['contact','summary','ExperienceFlipped','EducationFlipped','certificationsFlipped','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'] 
+         :['contact','summary','Experience','Education','certifications','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'];
 
       widgetsToHide.forEach((widget)=>{
         let findWidget = document.getElementsByClassName(widget)[0];
@@ -82,8 +82,8 @@ hobbies} = profileData;
           widget === 'Experience' || 
           widget === 'ExperienceFlipped' ||
           widget === 'Education' ||
-          widget === 'EducationFlipped' ||
-          widget === 'certifications'){
+          widget === 'EducationFlipped') 
+          {
           toTest = findWidget.lastElementChild.firstChild.childNodes;
         } else {
           toTest = findWidget.lastElementChild.childNodes;
