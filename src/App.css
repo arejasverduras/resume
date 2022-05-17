@@ -8,6 +8,11 @@ body {
   color: rgba(255, 255, 255, 0.888);
 }
 
+bodyFlipped {
+  background: linear-gradient(0.75turn, #ff1b6b, #45caff);
+  color: rgba(255, 255, 255, 0.888);
+}
+
 .colors {
   color: rgb(41, 237, 194);
   color: #feef48;

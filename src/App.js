@@ -24,10 +24,20 @@ function App() {
 addSkills,
 languages,
 hobbies} = profileData;
-  
+
+  // Flip 
+  const [flipped, setFlipped] = useState('');
+
+  const body = document.body;
+  if (flipped) {
+    body.style.background="linear-gradient(0.25turn, #45caff, #ff1b6b)"
+  }  else {
+    body.style.background="linear-gradient(0.25turn, #ff1b6b, #45caff)"
+  }
+
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
-    const [flipped, setFlipped] = useState('');
+
 
     const search = (data, cat,type) => {
       let result;
