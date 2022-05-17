@@ -69,7 +69,7 @@ hobbies} = profileData;
           if (data.toLowerCase().includes(searchTerm.toLowerCase())) {
             result = data;
           } else {
-            result = '';
+            result = `You searched for: "${searchTerm}"`;
           }
         }
       return result;
