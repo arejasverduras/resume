@@ -102,7 +102,7 @@ export const profileData = {
         // portfolio: ''
 
     },
-    summary: 'Bad-ass coding Champion',
+    summary: 'Bad-ass coding Champion!',
     keySkills: ['Building webapps from start to finish','Rocking React & Redux'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','FB Ads'],

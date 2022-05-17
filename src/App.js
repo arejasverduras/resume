@@ -124,7 +124,7 @@ hobbies} = profileData;
         flipped={flipped}
          />
       <Summary 
-        summary={search(summary, "summary objective","string")}
+        summary={search(summary, "summary objective michiel roukens","string")}
         flipped={flipped} />
   <SideBar 
     keySkills={search(keySkills, "key skills","array")}
