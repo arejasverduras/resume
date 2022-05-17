@@ -43,7 +43,7 @@ header {
   /* border: 2px dotted grey; */
   grid-area: header;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: space-between;
   padding: 30px;
