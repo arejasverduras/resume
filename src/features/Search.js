@@ -7,6 +7,7 @@ export const Search = ({searchTerm, setSearchTerm}) => {
     
     return (
         <input 
+            type="text"
             value={searchTerm} 
             onChange={handleChange} 
             className="searchField"

@@ -96,124 +96,6 @@ header {
   background-color: rgb(49, 48, 48);
 }
 
-/* Spin */
-
-@media (prefers-reduced-motion: no-preference) {
-  .titleHolderFlipped, .profilePictureFlipped {
-    animation: App-logo-spin  1s 2 alternate;
-  }
-
-  .WidgetFlipped {
-    animation: widgetFloat 10s infinite linear;
-  }
-
-  .Widget {
-    animation: widgetFloat 1s 1 alternate;
-  }
-
-  .titleHolderFlipped {
-    animation: spin-in-place 20s infinite alternate;
-  }
-
-  .titleHolder, .profilePicture, .Content{
-    animation: appSlide 1s 1 linear;
-  }
-
-  .profilePicture {
-    animation: borderFlow 1s infinite;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-    margin-top: 100%;
-  }
-}
-
-@keyframes spin-in-place {
-  from {
-    transform: rotate(0deg);
-
-  }
-  to {
-    transform: rotate(360deg);
-
-  }
-}
-
-@keyframes widgetFloat {
-  from {
-
-    margin-top: 0%; 
-    margin-left: 0%;
-
-  }
-  33% {
-    margin-top: -3%;
-    margin-left: -3%;
-  }
-  66% {
-    margin-top: 3%;
-    margin-left: 3%;
-  }
-  to {
-    margin-top: 0%; 
-    margin-left: 0%;
-  }
-}
-
-@keyframes appSlide {
-  from {
-    margin-left: 0%;
-  }
-  25% {
-    margin-left: -100%;
-  }
-  50% {
-    margin-top: 40%;
-    margin-left: 100%;
-    background-color: #45caff;
-  }
-  75% {
-    margin-top: -40%;
-    margin-left: 25%;
-  }
-  to {
-    margin-left: 0%;
-  }
-}
-
-@keyframes borderFlow {
-  from {
-    border: 2px solid #45caff;
-  }
-  20% {
-    border-left: 2px solid #ff1b6b
-  }
-
-  40% {
-    border-bottom: 2px solid #ff1b6b
-  }
-
-  60% {
-    border-right: 2px solid #ff1b6b
-  }
-
-  80% {
-    border-top: 2px solid #ff1b6b;
-  }
-
-  to {
-    border: 2px solid #45caff;
-  }
-}
-
-/* background: linear-gradient(0.25turn, #ff1b6b, #45caff); */
-
 
 
 .headerName {
@@ -389,4 +271,121 @@ td {
 
 #certItem {
   list-style: disc;
+}
+
+
+/* Animations */
+
+@media (prefers-reduced-motion: no-preference) {
+  .titleHolderFlipped, .profilePictureFlipped {
+    animation: App-logo-spin  1s 2 alternate;
+  }
+
+  .WidgetFlipped {
+    animation: widgetFloat 10s infinite linear;
+  }
+
+  .Widget {
+    animation: widgetFloat 1s 1 alternate;
+  }
+
+  .titleHolderFlipped {
+    animation: spin-in-place 20s infinite alternate;
+  }
+
+  .titleHolder, .profilePicture, .Content{
+    animation: appSlide 1s 1 linear;
+  }
+
+  .profilePicture {
+    animation: borderFlow 1s infinite;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    margin-top: 100%;
+  }
+}
+
+@keyframes spin-in-place {
+  from {
+    transform: rotate(0deg);
+
+  }
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
+@keyframes widgetFloat {
+  from {
+
+    margin-top: 0%; 
+    margin-left: 0%;
+
+  }
+  33% {
+    margin-top: -3%;
+    margin-left: -3%;
+  }
+  66% {
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  to {
+    margin-top: 0%; 
+    margin-left: 0%;
+  }
+}
+
+@keyframes appSlide {
+  from {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-top: 40%;
+    margin-left: 100%;
+    background-color: #45caff;
+  }
+  75% {
+    margin-top: -40%;
+    margin-left: 25%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes borderFlow {
+  from {
+    border: 2px solid #45caff;
+  }
+  20% {
+    border-left: 2px solid #ff1b6b
+  }
+
+  40% {
+    border-bottom: 2px solid #ff1b6b
+  }
+
+  60% {
+    border-right: 2px solid #ff1b6b
+  }
+
+  80% {
+    border-top: 2px solid #ff1b6b;
+  }
+
+  to {
+    border: 2px solid #45caff;
+  }
 }
