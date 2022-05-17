@@ -11,7 +11,7 @@ export const Search = ({searchTerm, setSearchTerm}) => {
     }
     
     return (
-        <form onSubmit={handleClick}>
+        <form onSubmit={handleClick} id="form">
             <input 
                 type="text"
                 value={searchTerm} 

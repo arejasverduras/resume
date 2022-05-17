@@ -53,6 +53,7 @@ export const Header = (props) => {
         console.log(counter);
     }
 
+
     useEffect(()=>{
         let proPic = document.getElementsByClassName(flipped ? "profilePictureFlipped": "profilePicture")[0];
     proPic.addEventListener('click', handleClick);
@@ -60,6 +61,19 @@ export const Header = (props) => {
         proPic.removeEventListener('click', handleClick);
     }
     },[flipped])
+
+
+    const scrollSearchIntoView = ()=>{
+        document.getElementById("form").scrollIntoView();
+    }
+
+    useEffect(()=>{
+        let searchbar = document.getElementById("form");
+        searchbar.addEventListener('click', scrollSearchIntoView);
+        return ()=>{
+            searchbar.removeEventListener('click', scrollSearchIntoView);
+        }
+    })
 
 
     return (
