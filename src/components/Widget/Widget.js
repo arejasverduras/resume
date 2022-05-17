@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const Widget = ({content, title, name}) => {
+
     let classes = `Widget ${name}`;
     return (
         <div className={classes}>
