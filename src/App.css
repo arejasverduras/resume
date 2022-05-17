@@ -8,10 +8,6 @@ body {
   color: rgba(255, 255, 255, 0.888);
 }
 
-bodyFlipped {
-  background: linear-gradient(0.75turn, #ff1b6b, #45caff);
-  color: rgba(255, 255, 255, 0.888);
-}
 
 .colors {
   color: rgb(41, 237, 194);
@@ -63,7 +59,7 @@ header {
   border-bottom: 5px dotted rgba(255, 255, 255, 0.888);
   margin-bottom: 30px;
 }
-.profilePicture {
+.profilePicture, .profilePictureFlipped {
   width: 200px;
   border-radius: 50%;
   box-shadow: rgb(49, 48, 48) -5px 5px;
@@ -74,18 +70,7 @@ header {
   border-left: 5px solid #45caff; */
 }
 
-.profilePictureFlipped {
-  width: 200px;
-  border-radius: 50%;
-  box-shadow: rgb(49, 48, 48) -5px 5px;
-  top: 0px;
-  left: 0px;
-  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
-  /* border-top: 5px solid #ff1b6b;
-  border-left: 5px solid #45caff; */
-}
-
-.profilePicture:hover {
+.profilePicture:hover, .profilePictureFlipped:hover {
   position: relative;
   top: -15px;
   left: 15px;
@@ -93,7 +78,7 @@ header {
   border: 2px solid white;
 }
 
-.profilePicture:active {
+.profilePicture:active, .profilePictureFlipped:active {
   position: relative;
   top: 0px;
   left: 0px;
@@ -124,8 +109,12 @@ header {
 /* Spin */
 
 @media (prefers-reduced-motion: no-preference) {
-  .titleHolderFlipped, .profilePictureFlipped, .WidgetFlipped {
-    animation: App-logo-spin infinite 20s linear;
+  .titleHolderFlipped, .profilePictureFlipped {
+    animation: App-logo-spin  1s 2 alternate;
+  }
+
+  .WidgetFlipped {
+    animation: widgetFloat 1s 1 alternate;
   }
 }
 
@@ -136,20 +125,28 @@ header {
   }
   to {
     transform: rotate(360deg);
-    position: relative;
-    top: 500px;
-    right: 100px;
+    margin-top: 10%;
   }
 }
 
-@keyframes make-circle {
+@keyframes widgetFloat {
   from {
-    transform: rotate(0deg);
+
+    margin-top: 0%; 
     margin-left: 0%;
+
+  }
+  33% {
+    margin-top: -3%;
+    margin-left: -3%;
+  }
+  66% {
+    margin-top: 3%;
+    margin-left: 3%;
   }
   to {
-    transform: rotate(360deg);
-
+    margin-top: 0%; 
+    margin-left: 0%;
   }
 }
 
