@@ -19,11 +19,11 @@ export const Content = ({jobs, certifications, flipped}) => {
                 jobs={jobs} 
                 type={"education"}
                 flipped={flipped} />
-            {/* <Certificates 
+            <Certificates 
                 title={"Certifications"}
                 name={flipped? "certificationsFlipped": "certifications"}
                 certifications={certifications}
-                flipped={flipped} /> */}
+                flipped={flipped} />
         </div>
     )
 }
