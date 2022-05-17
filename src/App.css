@@ -100,6 +100,16 @@ header {
   background-color: rgb(49, 48, 48);
 }
 
+.titleHolderFlipped {
+  justify-items: flex-end;
+  align-items: center;
+  padding: 7px;
+  border-left: 5px solid #45caff;
+  border-top: 5px solid #45caff;
+  box-shadow: #ff1b6b 5px 5px;
+  background-color: rgb(49, 48, 48);
+}
+
 .headerName {
   font-size: 26px;
 }
