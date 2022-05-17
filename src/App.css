@@ -74,6 +74,17 @@ header {
   border-left: 5px solid #45caff; */
 }
 
+.profilePictureFlipped {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: rgb(49, 48, 48) -5px 5px;
+  top: 0px;
+  left: 0px;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+  /* border-top: 5px solid #ff1b6b;
+  border-left: 5px solid #45caff; */
+}
+
 .profilePicture:hover {
   position: relative;
   top: -15px;
@@ -109,6 +120,39 @@ header {
   box-shadow: #ff1b6b 5px 5px;
   background-color: rgb(49, 48, 48);
 }
+
+/* Spin */
+
+@media (prefers-reduced-motion: no-preference) {
+  .titleHolderFlipped, .profilePictureFlipped, .WidgetFlipped {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+
+  }
+  to {
+    transform: rotate(360deg);
+    position: relative;
+    top: 500px;
+    right: 100px;
+  }
+}
+
+@keyframes make-circle {
+  from {
+    transform: rotate(0deg);
+    margin-left: 0%;
+  }
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
 
 .headerName {
   font-size: 26px;

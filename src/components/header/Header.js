@@ -54,7 +54,7 @@ export const Header = (props) => {
     }
 
     useEffect(()=>{
-        let proPic = document.getElementsByClassName("profilePicture")[0];
+        let proPic = document.getElementsByClassName(flipped ? "profilePictureFlipped": "profilePicture")[0];
     proPic.addEventListener('click', handleClick);
     return ()=>{
         proPic.removeEventListener('click', handleClick);
@@ -64,7 +64,7 @@ export const Header = (props) => {
 
     return (
         <header>
-            <img src={profilePicture} alt={profileName} className="profilePicture"/>
+            <img src={profilePicture} alt={profileName} className={flipped ? "profilePictureFlipped": "profilePicture"}/>
             <div className={flipped ? "titleHolderFlipped": "titleHolder"}>
                 <h2 className="headerName">{profileName}</h2>
                 <h2 className="headerTitle">{profileTitle}</h2>
