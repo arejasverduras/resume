@@ -108,7 +108,7 @@ header {
   }
 
   .Widget {
-    animation: widgetFloat 1s 2 alternate;
+    animation: widgetFloat 1s 1 alternate;
   }
 
   .titleHolderFlipped {
