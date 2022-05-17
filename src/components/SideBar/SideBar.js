@@ -3,7 +3,7 @@ import { Widget } from '../Widget/Widget';
 
 export const SideBar = (props) => {
     // calculate content for Widget components
-    const {keySkills, techSkills,mktSkills, addSkills,languages, hobbies,} = props;
+    const {keySkills, techSkills,mktSkills, addSkills,languages, hobbies,flipped} = props;
 
     const skillMaker = (skillArray) => {
         return skillArray.map(skill => (
@@ -14,12 +14,36 @@ export const SideBar = (props) => {
 
     return (
         <div className='SideBar'>
-                 <Widget name="keySkills" title="Key Skills"  content={skillMaker(keySkills)} />
-                 <Widget name="techSkills" title="Tech Skills"  content={skillMaker(techSkills)} />
-                 <Widget name="mktSkills" title="Marketing Skills"  content={skillMaker(mktSkills)} />
-                 <Widget name="addSkills" title="Additional Skills"  content={skillMaker(addSkills)} />
-                 <Widget name="languages" title="Languages"  content={skillMaker(languages)} />
-                 <Widget name="hobbies" title="Hobbies"  content={skillMaker(hobbies)} />
+                 <Widget 
+                    name="keySkills" 
+                    title="Key Skills"  
+                    content={skillMaker(keySkills)}
+                    flipped={flipped} />
+                 <Widget 
+                    name="techSkills" 
+                    title="Tech Skills"  
+                    content={skillMaker(techSkills)}
+                    flipped={flipped} />
+                 <Widget 
+                    name="mktSkills" 
+                    title="Marketing Skills"  
+                    content={skillMaker(mktSkills)}
+                    flipped={flipped} />
+                 <Widget 
+                    name="addSkills" 
+                    title="Additional Skills"  
+                    content={skillMaker(addSkills)}
+                    flipped={flipped} />
+                 <Widget 
+                    name="languages" 
+                    title="Languages"  
+                    content={skillMaker(languages)}
+                    flipped={flipped} />
+                 <Widget 
+                    name="hobbies" 
+                    title="Hobbies"  
+                    content={skillMaker(hobbies)}
+                    flipped={flipped} />
         </div>
     )
 }

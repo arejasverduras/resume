@@ -1,7 +1,7 @@
 import React from 'react';
 import { Widget } from '../Widget/Widget';
 
-export const Contact = ({contactInfo}) => {
+export const Contact = ({contactInfo, flipped}) => {
     const contactTable = 
     <table>
 {        contactInfo.map(([key, value]) => 
@@ -16,7 +16,11 @@ export const Contact = ({contactInfo}) => {
 
     return (
         <>
-        <Widget name="contact" title="Contact" content={contactTable}  />
+        <Widget 
+            name="contact" 
+            title="Contact" 
+            content={contactTable} 
+            flipped={flipped}  />
         </>
     )
 }

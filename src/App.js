@@ -27,7 +27,7 @@ hobbies} = profileData;
   
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
-    const [flipped, setFlipped] = useState();
+    const [flipped, setFlipped] = useState('hoi');
 
     const search = (data, cat,type) => {
       let result;
@@ -102,8 +102,13 @@ hobbies} = profileData;
         flipped={flipped}
         setFlipped={setFlipped}
       />
-      <Contact contactInfo={search(contactInfo, 'contact','object')} />
-      <Summary summary={summary} />
+      <Contact 
+        contactInfo={search(contactInfo, 'contact','object')}
+        flipped={flipped}
+         />
+      <Summary 
+        summary={summary}
+        flipped={flipped} />
   <SideBar 
     keySkills={search(keySkills, "key skills","array")}
     techSkills={search(techSkills, "tech skills","array")}
@@ -111,10 +116,12 @@ hobbies} = profileData;
     addSkills={search(addSkills, "additional skills","array")}
     languages={search(languages, "languages","array")}
     hobbies={search(hobbies, "hobbies", "array")}
+    flipped={flipped}
      />
     <Content 
       jobs={search(jobs,'jobs','Array of Objects')} 
-      certifications={search(certifications,'certifications','Array of Objects')} />
+      certifications={search(certifications,'certifications','Array of Objects')}
+      flipped={flipped} />
     </div>
 
   );

@@ -148,6 +148,18 @@ header {
   letter-spacing: 0.1em;
 }
 
+.WidgetFlipped {
+
+  margin: 2px;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.888);
+  color:rgb(49, 48, 48);
+  box-shadow: #45caff 5px 5px;
+  transition: left 1s, top 1s;
+  letter-spacing: 0.1em;
+}
+
 .Widget:hover {
   position: relative;
   left: -15px;
@@ -157,7 +169,17 @@ header {
   border-left: #ff1b6b solid 5px;
   border-top: #ff1b6b solid 5px;
   z-index: 3;
-  
+}
+
+.WidgetFlipped:hover {
+  position: relative;
+  left: 15px;
+  top: 10px;
+  box-shadow: #ff1b6b 5px 5px;
+  /* box-shadow: #ff1b6b -5px -5px; */
+  border-left: #45caff solid 5px;
+  border-top: #45caff  solid 5px;
+  z-index: 3; 
 }
 
 .widgetTitle {
@@ -165,6 +187,14 @@ header {
   color: #ff1b6b;
   padding-bottom: 7px;
   border-bottom: 2px solid #45caff;
+  margin-bottom: 7px;
+}
+
+.widgetTitleFlipped {
+  /* insert widget Title styles here */
+  color: #45caff;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #ff1b6b;
   margin-bottom: 7px;
 }
 
