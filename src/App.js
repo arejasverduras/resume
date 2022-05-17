@@ -62,6 +62,15 @@ hobbies} = profileData;
                 cert.date.toLowerCase().includes(searchTerm.toLowerCase())
               ))) 
             }
+        } else if (type === 'string') {
+          if (cat.includes(searchTerm.toLowerCase())){
+            result = data;
+          } else 
+          if (data.toLowerCase().includes(searchTerm.toLowerCase())) {
+            result = data;
+          } else {
+            result = '';
+          }
         }
       return result;
     }
@@ -115,7 +124,7 @@ hobbies} = profileData;
         flipped={flipped}
          />
       <Summary 
-        summary={summary}
+        summary={search(summary, "summary objective","string")}
         flipped={flipped} />
   <SideBar 
     keySkills={search(keySkills, "key skills","array")}
