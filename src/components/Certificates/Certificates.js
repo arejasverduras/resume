@@ -1,7 +1,7 @@
 import React from 'react';
 import { Widget } from '../Widget/Widget';
 
-export const Certificates = ({jobs, title, certifications}) => {
+export const Certificates = ({jobs, title, name, certifications, flipped}) => {
     
 
     const certificateList = 
@@ -18,6 +18,7 @@ export const Certificates = ({jobs, title, certifications}) => {
             title={title}
             name={"certifications"}
             content={certificateList}
+            // flipped={flipped}
         />
      )
 }

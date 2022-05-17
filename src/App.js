@@ -27,7 +27,7 @@ hobbies} = profileData;
   
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
-    const [flipped, setFlipped] = useState('hoi');
+    const [flipped, setFlipped] = useState('');
 
     const search = (data, cat,type) => {
       let result;
@@ -68,14 +68,22 @@ hobbies} = profileData;
 
     // hide sections not relevant for search
     useEffect(()=>{
-      let widgetsToHide = ['contact','Experience','Education','certifications','keySkills','techSkills','mktSkills','addSkills','languages','hobbies']
+
+      let widgetsToHide = flipped?
+         ['contact','ExperienceFlipped','EducationFlipped','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'] 
+         :['contact','Experience','Education','keySkills','techSkills','mktSkills','addSkills','languages','hobbies'];
 
       widgetsToHide.forEach((widget)=>{
         let findWidget = document.getElementsByClassName(widget)[0];
-        
+        console.log('widget'+ widget + findWidget);
 
         let toTest;
-        if (widget === 'contact' || widget === 'Experience' || widget === 'Education'){
+        if (widget === 'contact' || 
+          widget === 'Experience' || 
+          widget === 'ExperienceFlipped' ||
+          widget === 'Education' ||
+          widget === 'EducationFlipped' ||
+          widget === 'certifications'){
           toTest = findWidget.lastElementChild.firstChild.childNodes;
         } else {
           toTest = findWidget.lastElementChild.childNodes;

@@ -2,25 +2,28 @@ import React from 'react';
 import { Certificates } from '../Certificates/Certificates';
 import { JobList } from '../JobList/JobList';
 
-export const Content = ({jobs, certifications}) => {
+export const Content = ({jobs, certifications, flipped}) => {
 
     
     return (
         <div className='Content'>
             <JobList 
                 title={"Experience"} 
-                name={"Experience"} 
+                name={flipped? "ExperienceFlipped": "Experience"} 
                 jobs={jobs} 
-                type={"experience"} />
+                type={"experience"}
+                flipped={flipped} />
             <JobList 
                 title={"Education"} 
-                name={"Education"} 
+                name={flipped? "EducationFlipped": "Education"} 
                 jobs={jobs} 
-                type={"education"} />
-            <Certificates 
+                type={"education"}
+                flipped={flipped} />
+            {/* <Certificates 
                 title={"Certifications"}
-                name={"Certifications"}
-                certifications={certifications} />
+                name={flipped? "certificationsFlipped": "certifications"}
+                certifications={certifications}
+                flipped={flipped} /> */}
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Widget } from '../Widget/Widget';
 
-export const JobList = ({jobs, type, title}) => {
+export const JobList = ({jobs, type, title, name, flipped}) => {
     const jobsFilter = jobs.filter(job => job.type === type)
     
     const contentArray = 
@@ -25,7 +25,12 @@ export const JobList = ({jobs, type, title}) => {
     
     return (
     <div className='Content'>
-        <Widget title={title} name={title} content={contentArray} />
+        <Widget 
+            title={title} 
+            name={name} 
+            content={contentArray}
+            flipped={flipped}
+            />
 </div>)
 }
 
