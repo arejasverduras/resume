@@ -208,7 +208,7 @@ hobbies} = profileData;
         flipped={flipped}
          />
       <Summary 
-        summary={search(summary, "summary objective michiel roukens about front-end back full stack remote hybrid junior developer codecademy startup","jsx")}
+        summary={search(summary, "summary objective michiel roukens about front-end frontend back-end backend front back end full stack remote hybrid junior developer codecademy startup","jsx")}
         flipped={flipped} />
   <SideBar 
     keySkills={search(keySkills, "key skills","array")}
