@@ -1,22 +1,27 @@
+import React from 'react';
+
+const codecademy = <a href="http://codecademy.com">code</a>;
+
 export const profileData = {
     profileName: 'Michiel Roukens',
     profileTitle: 'React Developer',
     profilePicture: "./images/michiel.jpeg",
     jobs: [{
         type: 'experience',
-        period: '2021/2022',
+        period: '2020/2022',
         title: 'Freelance Developer',
         company: 'Arejas',
         location: 'The Hague',
         description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
-    }, {
-        type: 'experience',
-        period: '2020',
-        title: 'Campervan builder',
-        company: 'Freelance',
-        location: '',
-        description: 'Converting cargovans to Campervans'
     }, 
+    // {
+    //     type: 'experience',
+    //     period: '2020',
+    //     title: 'Campervan builder',
+    //     company: 'Freelance',
+    //     location: '',
+    //     description: 'Converting cargovans to Campervans'
+    // }, 
     // {
     //     type: 'job',
     //     period: '2017-2019',
@@ -105,7 +110,12 @@ export const profileData = {
         // portfolio: ''
 
     },
-    summary: 'Bad-ass coding Champion!',
+    summary2: 'Bad-ass coding Champion!',
+    summary: 'My name is Michiel, a Startup founder turned Developer. Making the most of my new found passion for coding, excited with wonderment as an 8 year old. In general: extremely passionate about building beautifull things. Self-starting, Highly determined, obsessively passionate. Having completed the Front-end section of the Full Stack Career Course on codecademy, I am eager to practice my new found skills as a Front-end / React Developer. Open for a junior position or Freelance assignment. Remote / hybrid preferred. Get in touch!',
+    summary3: '"To work passionately on challenging projects, living all around the world,  "',
+    summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
+    summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
+
     keySkills: ['Building webapps from start to finish','Rocking React & Redux','UI designing','Conversion Optimisation'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],

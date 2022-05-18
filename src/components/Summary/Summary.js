@@ -6,7 +6,7 @@ export const Summary = ({summary, flipped}) => {
     return (
         <Widget 
             name="summary" 
-            title="" 
+            title="Hello!" 
             content={summary}
             flipped={flipped}  />
     )
