@@ -7,7 +7,7 @@ export const profileData = {
         period: '2021/2022',
         title: 'Freelance Developer',
         company: 'Arejas',
-        location: 'The Hague, NL',
+        location: 'The Hague',
         description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
     }, {
         type: 'experience',
@@ -31,8 +31,7 @@ export const profileData = {
         title: 'mijnJohan.nl',
         company: 'privately held',
         location: '',
-        description: 'Ontwikkeling, verkoop en marketing van digitale producten voor onafhankelijke ondernemers. Passief inkomen bedrijf.'
-
+        description:'Development, Marketing and Sales. Homegrown accountancy software for independent entrepreneurs. Passive Income Company.'
     },
     {
         type: 'experience',
@@ -40,7 +39,8 @@ export const profileData = {
         title: 'Growth Hacker',
         company: 'Camptoo.nl',
         location: 'The Hague',
-        description: 'Hoofverantwoordelijk voor de groei van het aanbod van campers & caravans op dit peer-2-peer platform, gebruikmakend van het volledige online marketing spectrum gebasseerd op tracking & data analyse'
+        descriptionNL: 'Hoofverantwoordelijk voor de groei van het aanbod van campers & caravans op dit peer-2-peer platform, gebruikmakend van het volledige online marketing spectrum gebasseerd op tracking & data analyse. Analytics, Split Testing, Conversion optimisation.',
+        description: 'Head responsible for the growth of the offer of on this peer-2-peer Campers & Caravans renting platform, using the complete online marketing spectrum including Goal Tracking, Analytics, Split Testing and Conversion Optimisation.'
 
     },
 
@@ -50,16 +50,18 @@ export const profileData = {
         title: 'First marketing Officer',
         company: 'Yippie.nl',
         location: 'Amsterdam',
-        description: 'Hoofdverantwoordelijk voor de eerste groeispurt in gebruikers van deze shopping-app, gebruikmakend van het volledige online marketing spectrum'
+        descriptionNL: 'Hoofdverantwoordelijk voor de eerste groeispurt in gebruikers van deze shopping-app, gebruikmakend van het volledige online marketing spectrum.',
+        description: 'Head responsible for the first growth spurt in users of this shopping-app, using the complete online marketing spectrum including Facebook Ads, Google Ads, Goal Tracking, Analytics, Split Testing and Conversion Optimisation.'
 
     },
     {
         type: 'experience',
         period: '2011-2014',
-        title: 'Ceo & Founder',
+        title: 'Startup Founder',
         company: 'OWNR',
         location: 'The Hague',
-        description: 'Internet startup in action sports. Verantwoordelijk voor marketing, verkoop, investeerders, productontwikkeling en algemeen succes. Samenwerkingen met onder andere Quiksilver / DC shoes en Nitro Snowboards.'
+        descriptionNL: 'Internet startup in action sports. Verantwoordelijk voor marketing, verkoop, investeerders, productontwikkeling en algemeen succes. Samenwerkingen met onder andere Quiksilver / DC shoes en Nitro Snowboards.',
+        description: 'Internet startup in action sports. Responsible for marketing, sales, investors, product-development and allround succes. Collaborations with among others: Quiksilver / DC shoes and Nitro Snowboards.'
     },
     {
         type: 'education',
@@ -67,7 +69,7 @@ export const profileData = {
         company: 'codecademy',
         location: '',
         title: 'FullStack Developer Career Path Course',
-        description: 'Becoming a Full-Stack web developer learning to build web-apps using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github.'
+        description: "Becoming a Full-Stack web developer learning to build web-apps' front-end and back-end using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github."
     },
     {
         type: 'education',
@@ -75,7 +77,7 @@ export const profileData = {
         company: 'WdKa',
         location: 'Rotterdam',
         title: 'Creative Advertising',
-        description: 'Art Direction, concepting & realisation. Royal Arts Academy of Rotterdam.'
+        description: 'Art Direction, concepting & realisation. Arts Academy of Rotterdam.'
     },
     {
         type: 'education',
@@ -83,7 +85,8 @@ export const profileData = {
         company: 'Ashram College',
         location: 'Alphen aan den rijn',
         title: 'Atheneum',
-        description: 'Atheneum. Richting Economie & Maatschappij. Keuzevak Informatica. Profielwerkstuk: Encryptie'
+        descriptionNL: 'Atheneum. Richting Economie & Maatschappij. Keuzevak Informatica. Profielwerkstuk: Encryptie',
+        description: 'Atheneum. Focus on Economics & Society. Field of choice: Computer Science. Research paper: Encryption.'
     },
 ],
     certifications: [{
@@ -94,7 +97,7 @@ export const profileData = {
         date: "Jan '21"
     }],
     contactInfo: {
-        phone: '+31614819860',
+        phone: '+31622040319',
         email: 'info@arejo.nl',
         location: 'The Hague, Netherlands',
         github: <a href='https://github.com/arejasverduras' target='_blank' rel="noreferrer">github</a>,
@@ -103,9 +106,9 @@ export const profileData = {
 
     },
     summary: 'Bad-ass coding Champion!',
-    keySkills: ['Building webapps from start to finish','Rocking React & Redux'],
+    keySkills: ['Building webapps from start to finish','Rocking React & Redux','UI designing','Conversion Optimisation'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
-    mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','FB Ads'],
+    mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup'],
     languages: ['Dutch','English','German','Spanish'],
     hobbies: ['Snowboard','Skateboard','Surf','Wake', 'Climbing', 'Guitar', 'Travel', 'Campervans']
