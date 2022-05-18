@@ -50,7 +50,7 @@ export const Header = (props) => {
     const handleClick =() =>{
         setFlipped(flipped? false: true);
         counter +=1;
-        console.log(counter);
+        console.log('flipped: ' +counter);
     }
 
 

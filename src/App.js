@@ -7,7 +7,7 @@ import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
 import { Summary } from './components/Summary/Summary';
-
+import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm'
 
 function App() {
   const { 
@@ -37,7 +37,6 @@ hobbies} = profileData;
 
       // Search Functionality
     const [searchTerm, setSearchTerm] = useState('')
-
 
     const search = (data, cat,type) => {
       let result;
@@ -119,6 +118,62 @@ hobbies} = profileData;
 
     },[searchTerm])
 
+
+    //Show / Hide ShowSearchTerm
+
+    useEffect(()=>{
+      let widgets = document.getElementsByClassName('Widget');
+
+      let showSearchTerm = document.getElementsByClassName('ShowSearchTerm')[0];
+
+      let widgetsEntries = Object.entries(widgets);
+      console.log(widgetsEntries);
+
+      for (let x = 0; x < widgetsEntries.length;x++){
+        let displayValue = Object.values(widgets[x].style.display).join('');
+        console.log(displayValue);
+        
+        if (displayValue === 'none') {
+          console.log('display none: ' + displayValue)
+          showSearchTerm.style.display="grid"
+           console.log(showSearchTerm.style.display);
+        } else {
+          console.log('display other: '+ displayValue);
+          showSearchTerm.style.display="none";
+          console.log('stdisplayvalue: '+showSearchTerm.style.display);
+        }
+      }
+
+        // let displayValue = Object.values(widgets[0].style.display).join('');
+        // console.log(displayValue);
+        // if (displayValue === 'none') {
+        //   console.log('display none: ' + displayValue)
+        //   showSearchTerm.style.display="grid"
+        //    console.log(showSearchTerm.style.display);
+        // } else {
+        //   console.log('display other: '+ displayValue);
+        //   showSearchTerm.style.display="none"
+        //   console.log(showSearchTerm.style.display);
+        // }
+
+
+
+      
+
+
+    //  if (displayValue === 'none') {
+    //    console.log('display none: ' + displayValue)
+    //    showSearchTerm.style.display="grid"
+    //     console.log(showSearchTerm.style.display);
+    //  } else {
+    //    console.log('display other: '+ displayValue);
+    //    showSearchTerm.style.display="none"
+    //    console.log(showSearchTerm.style.display);
+    //  }
+
+
+    },[searchTerm])
+
   return (
     <div className="App">
       <Header 
@@ -146,9 +201,13 @@ hobbies} = profileData;
     hobbies={search(hobbies, "hobbies", "array")}
     flipped={flipped}
      />
+
     <Content 
       jobs={search(jobs,'jobs','Array of Objects')} 
       certifications={search(certifications,'certifications','Array of Objects')}
+      flipped={flipped} />
+    <ShowSearchTerm 
+      searchTerm={searchTerm}
       flipped={flipped} />
     </div>
 
