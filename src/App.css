@@ -8,6 +8,12 @@ body {
   color: rgba(255, 255, 255, 0.888);
 }
 
+a {
+  color: #45caff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .App {
   display: grid;
   max-width: 1024px;
