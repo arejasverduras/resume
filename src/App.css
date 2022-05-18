@@ -221,7 +221,11 @@ header {
 
 .summary {
   grid-area: summary;
-  font-style:italic;
+  /* font-style:italic; */
+}
+
+.summary p {
+  padding-bottom: 8px;
 }
 
 
