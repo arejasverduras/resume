@@ -277,7 +277,7 @@ td {
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
-  .titleHolderFlipped, .profilePictureFlipped {
+  .titleHolderFlipped, .profilePictureFlipped{
     animation: App-logo-spin  1s 2 alternate;
   }
 

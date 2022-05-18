@@ -79,7 +79,9 @@ hobbies} = profileData;
           if (data.toLowerCase().includes(searchTerm.toLowerCase())) {
             result = data;
           } else {
-            result = `You searched for: "${searchTerm}"`;
+            // result = `You searched for: "${searchTerm}"`;
+            result = ''
+
           }
         }
       return result;
@@ -94,7 +96,6 @@ hobbies} = profileData;
 
       widgetsToHide.forEach((widget)=>{
         let findWidget = document.getElementsByClassName(widget)[0];
-        console.log('widget'+ widget + findWidget);
 
         let toTest;
         if (widget === 'contact' || 
