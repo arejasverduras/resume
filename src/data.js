@@ -76,6 +76,14 @@ export const profileData = {
     },
     {
         type: 'education',
+        period: '2020 - 2021',
+        company: 'codecademy',
+        location: '',
+        title: 'Build a back-end app with JavaScript',
+        description: "A predecessor to codecademy's back-end engineer career path. This was my introduction to JavaScript, Node, Express, SQL and building API's."
+    },
+    {
+        type: 'education',
         period: '2008-2010',
         company: 'WdKa',
         location: 'Rotterdam',
