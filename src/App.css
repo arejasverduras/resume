@@ -133,6 +133,12 @@ header {
 }
 
 @media screen and (max-width: 500px) {
+
+  form {
+    min-width: 100%;
+    display: flex;
+  justify-content: center;
+  }
   .searchField {
     min-width: 80%;
   }
