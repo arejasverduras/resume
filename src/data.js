@@ -111,7 +111,7 @@ export const profileData = {
 
     },
     summary2: 'Bad-ass coding Champion!',
-    summary: 'My name is Michiel, a Startup founder turned Developer. Making the most of my new found passion for coding, excited with wonderment as an 8 year old. In general: extremely passionate about building beautifull things. Self-starting, Highly determined, obsessively passionate. Having completed the Front-end section of the Full Stack Career Course on codecademy, I am eager to practice my new found skills as a Front-end / React Developer. Open for a junior position or Freelance assignment. Remote / hybrid preferred. Get in touch!',
+    summary: 'Startup founder turned developer. Making the most of my new found passion for coding, excited with wonderment as an 8 year old. Extremely passionate about building beautifull things. Self-starting, Highly determined, obsessively persistent. Having completed the Front-end section of the Full Stack Career Course on codecademy, I am eager to practice my new found skills as a Front-end / React Developer. Open for a junior position or Freelance assignment. Remote / hybrid preferred. Get in touch!',
     summary3: '"To work passionately on challenging projects, living all around the world,  "',
     summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
     summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
