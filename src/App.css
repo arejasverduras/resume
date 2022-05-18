@@ -278,6 +278,7 @@ td {
 
 .ShowSearchTerm {
   grid-area: ShowSearchTerm;
+  opacity: 60%;
 }
 
 /* Animations */
