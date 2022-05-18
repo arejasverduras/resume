@@ -264,10 +264,24 @@ header {
 
 .jobTitle {
   font-weight: bold;
+  width: 70%;
 }
 
 .jobCompany {
   font-style: italic;
+  font-size: 0.8em;
+}
+
+.jobPeriod {
+  width: 30%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .jobCompany {
+    font-size: 0.8em;
+    padding-right: 30px;
+  }
 }
 .jobDescription {
   padding-bottom: 10px;

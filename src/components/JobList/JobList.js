@@ -9,8 +9,8 @@ export const JobList = ({jobs, type, title, name, flipped}) => {
 {        jobsFilter.map(jobObject => 
                 <>
                 <tr>
-                    <td style={{"width": "30%"}} className="jobPeriod">{jobObject.period}</td>
-                    <td style={{"width": "70%"}}className="jobTitle">{jobObject.title}</td>
+                    <td className="jobPeriod">{jobObject.period}</td>
+                    <td className="jobTitle">{jobObject.title}</td>
                 </tr>
                 <tr>
                 <td className='jobCompany'>{jobObject.company}<br/>{jobObject.location}</td><td colSpan="1" className='jobDescription'>{jobObject.description}</td>
