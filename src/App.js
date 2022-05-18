@@ -122,7 +122,7 @@ hobbies} = profileData;
         }
       })
 
-    },[searchTerm])
+    },[searchTerm, flipped])
 
 
     //Show / Hide ShowSearchTerm
