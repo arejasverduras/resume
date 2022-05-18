@@ -82,6 +82,12 @@ hobbies} = profileData;
             result = ''
 
           }
+        } else if (type === 'jsx') {
+          if (cat.includes(searchTerm.toLowerCase())){
+            result = data;
+          } else if (data){
+            result =''
+          }
         }
       return result;
     }
@@ -202,7 +208,7 @@ hobbies} = profileData;
         flipped={flipped}
          />
       <Summary 
-        summary={search(summary, "summary objective michiel roukens","string")}
+        summary={search(summary, "summary objective michiel roukens about front-end back full stack remote hybrid junior developer codecademy startup","jsx")}
         flipped={flipped} />
   <SideBar 
     keySkills={search(keySkills, "key skills","array")}

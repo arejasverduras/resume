@@ -1,6 +1,12 @@
 import React from 'react';
 
-const codecademy = <a href="http://codecademy.com">code</a>;
+const objective = 
+<>
+    <p><b>Startup founder turned developer.</b></p>
+    <p>Extremely passionate about building beautifull, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
+    <p>Having completed the Front-end section of the Full Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
+    <p>Open for a junior position or Freelance assignment. Remote / hybrid preferred. <br/>Get in touch!</p>
+</>
 
 export const profileData = {
     profileName: 'Michiel Roukens',
@@ -111,7 +117,12 @@ export const profileData = {
 
     },
     summary2: 'Bad-ass coding Champion!',
-    summary: 'Startup founder turned developer. Making the most of my new found passion for coding, excited with wonderment as an 8 year old. Extremely passionate about building beautifull things. Self-starting, Highly determined, obsessively persistent. Having completed the Front-end section of the Full Stack Career Course on codecademy, I am eager to practice my new found skills as a Front-end / React Developer. Open for a junior position or Freelance assignment. Remote / hybrid preferred. Get in touch!',
+    summary: <>
+    <p><b>Startup founder turned developer.</b></p>
+    <p>Extremely passionate about building beautifull, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
+    <p>Having completed the Front-end section of the Full Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
+    <p>Open for a junior position or Freelance assignment. Remote / hybrid preferred. <br/>Get in touch!</p>
+</>,
     summary3: '"To work passionately on challenging projects, living all around the world,  "',
     summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
     summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
