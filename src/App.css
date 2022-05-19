@@ -190,13 +190,6 @@ header {
   z-index: 3;
 }
 
-@media screen and (max-width: 500px) {
-  .Widget:hover, .WidgetFlipped:hover {
-    left: 0px;
-    top: 0px;
-  }
-}
-
 .WidgetFlipped:hover {
   position: relative;
   left: 15px;
@@ -206,6 +199,13 @@ header {
   border-left: #45caff solid 5px;
   border-top: #45caff  solid 5px;
   z-index: 3; 
+}
+
+@media screen and (max-width: 500px) {
+  .Widget:hover, .WidgetFlipped:hover {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 .widgetTitle {
@@ -328,6 +328,13 @@ td {
 
   .WidgetFlipped {
     animation: widgetFloat 10s infinite linear;
+  }
+
+  @media screen and (max-width: 500px) {
+    .WidgetFlipped {
+      animation: widgetFloat 1s 1 alternate;
+    }
+    
   }
 
   .Widget {
