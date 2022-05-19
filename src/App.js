@@ -8,6 +8,7 @@ import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
 import { Summary } from './components/Summary/Summary';
 import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm'
+import { Printer } from './components/ComponentToPrint/Printer';
 
 function App() {
   const { 
@@ -227,6 +228,8 @@ hobbies} = profileData;
     <ShowSearchTerm 
       searchTerm={searchTerm}
       flipped={flipped} />
+      <Printer     contactInfo={search(contactInfo, 'contact','object')}
+        flipped={flipped}/>
     </div>
 
   );
