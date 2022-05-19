@@ -190,6 +190,13 @@ header {
   z-index: 3;
 }
 
+@media screen and (max-width: 500px) {
+  .Widget:hover, .WidgetFlipped:hover {
+    left: 0px;
+    top: 0px;
+  }
+}
+
 .WidgetFlipped:hover {
   position: relative;
   left: 15px;
