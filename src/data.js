@@ -43,7 +43,7 @@ export const profileData = {
         company: 'Camptoo.nl',
         location: 'The Hague',
         descriptionNL: 'Hoofverantwoordelijk voor de groei van het aanbod van campers & caravans op dit peer-2-peer platform, gebruikmakend van het volledige online marketing spectrum gebasseerd op tracking & data analyse. Analytics, Split Testing, Conversion optimisation.',
-        description: 'Head responsible for the growth of the offer of on this peer-2-peer Campers & Caravans renting platform, using the complete online marketing spectrum including Goal Tracking, Analytics, Split Testing and Conversion Optimisation.'
+        description: 'Head responsible for the growth of the product-offering for this peer-2-peer Campers & Caravans renting platform, using the complete online marketing spectrum including Goal Tracking, Analytics, Split Testing and Conversion Optimisation.'
 
     },
 
@@ -71,7 +71,7 @@ export const profileData = {
         period: '2022 - Present',
         company: 'codecademy',
         location: '',
-        title: 'FullStack Developer Career Path Course',
+        title: 'Full-Stack Developer Career Path Course',
         description: "Becoming a Full-Stack web developer learning to build web-apps' front-end and back-end using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github."
     },
     {
@@ -94,7 +94,7 @@ export const profileData = {
         type: 'education',
         period: '1998-2004',
         company: 'Ashram College',
-        location: 'Alphen aan den rijn',
+        location: 'Alphen aan den Rijn',
         title: 'Atheneum',
         descriptionNL: 'Atheneum. Richting Economie & Maatschappij. Keuzevak Informatica. Profielwerkstuk: Encryptie',
         description: 'Atheneum. Focus on Economics & Society. Field of choice: Computer Science. Research paper: Encryption.'
@@ -120,14 +120,14 @@ export const profileData = {
     summary: <>
     <p><b>Startup founder turned developer.</b></p>
     <p>Extremely passionate about building beautifull, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
-    <p>Having completed the Front-end section of the Full Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
+    <p>Having completed the Front-end section of the Full-Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
     <p>Open for a junior position or Freelance assignment. Remote / hybrid preferred. <br/>Get in touch!</p>
 </>,
     summary3: '"To work passionately on challenging projects, living all around the world,  "',
     summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
     summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
 
-    keySkills: ['Building webapps from start to finish','Rocking React & Redux','UI designing','Conversion Optimisation'],
+    keySkills: ['Building web-apps from start to finish','Rocking React & Redux','UI design','Conversion Optimisation'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup'],
