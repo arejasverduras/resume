@@ -18,8 +18,7 @@ export const Search = ({searchTerm, setSearchTerm}) => {
                 value={searchTerm} 
                 onChange={handleChange} 
                 className="searchField"
-                placeholder='Search'
-                
+                placeholder='Search'         
                 />
         </form>
     )
