@@ -1,16 +1,18 @@
 import React from 'react'
 
 export const Search = ({searchTerm, setSearchTerm}) => {
-    const handleChange = ({target}) => {
-        setSearchTerm(target.value)
+    const handleChange = (e) => {
+        setSearchTerm(e.target.value);
+        if (e.key === 'Enter'){
+            console.log('enter recognized')
+            e.target.blur();
+        }
     }
 
     const handleClick = (e) => {
-        if (e.key === "Enter"){
-            e.target.blur();
-        }
         e.preventDefault();
-        return searchTerm;
+        console.log('hallo??');
+        e.target.blur();
     }
     
     return (
@@ -21,6 +23,7 @@ export const Search = ({searchTerm, setSearchTerm}) => {
                 onChange={handleChange} 
                 className="searchField"
                 placeholder='Search'
+                
                 />
         </form>
     )
