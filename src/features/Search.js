@@ -6,6 +6,9 @@ export const Search = ({searchTerm, setSearchTerm}) => {
     }
 
     const handleClick = (e) => {
+        if (e.key === "Enter"){
+            e.target.blur();
+        }
         e.preventDefault();
         return searchTerm;
     }
