@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 export const Search = ({searchTerm, setSearchTerm}) => {
     const handleChange = (e) => {
@@ -10,6 +10,18 @@ export const Search = ({searchTerm, setSearchTerm}) => {
         console.log('hallo??');
         e.target.firstChild.blur();
     }
+
+    const scrollSearchIntoView = ()=>{
+        document.getElementById("form").scrollIntoView();
+    }
+
+    useEffect(()=>{
+        let searchbar = document.getElementById("form");
+        searchbar.addEventListener('click', scrollSearchIntoView);
+        return ()=>{
+            searchbar.removeEventListener('click', scrollSearchIntoView);
+        }
+    },[searchTerm])
     
     return (
         <form onSubmit={handleClick} id="form">
