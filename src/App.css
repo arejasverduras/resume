@@ -30,7 +30,7 @@ a {
   padding: 14px 28px;
   margin: 0 auto 20px auto;
   border-radius: 0px;
-  font-size: 16pt;
+  font-size: 12pt;
   box-shadow: #ff1b6b 5px 5px;
 
   background-color: rgba(255, 255, 255, 0.888);
@@ -38,7 +38,7 @@ a {
   box-shadow: #45caff 5px 5px;
   left: 0;
   top: 0;
-  transition: left 1s, top 1s, box-shadow 1s;
+  transition: all 1s;
   letter-spacing: 0.1em;
 }
 
@@ -48,6 +48,7 @@ a {
   top: -10px;
   box-shadow: #45caff 15px 10px;
   z-index: 3;
+  font-size: 16pt;
 } 
 
 @media screen and (max-width: 500px) {
@@ -63,10 +64,11 @@ a {
 
 .topButton {
   grid-area: topButton;
-  margin-right: 0%;
+  margin-right: 5px;
+  margin-top: 5px;
   margin-bottom: -50px;
   opacity: 0.4;
-  transition: none;
+  box-shadow: #45caff 5px -5px;
 }
 
 .topButton:hover {
@@ -77,6 +79,10 @@ a {
   color: rgb(49, 48, 48);
   border-left: none;
   border-top: none;
+  position: relative;
+  top: 15px;
+  left: -15px;
+  box-shadow: #45caff 10px -10px;
 }
 
 .printButton:active {
