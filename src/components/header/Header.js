@@ -17,7 +17,7 @@ export const Header = (props) => {
     },[flipped])
 
     return (
-        <header className={flipped ? "headerFlipped": ""}>
+        <header className={flipped ? "headerFlipped": "header"}>
             <img src={profilePicture} alt={profileName} className={flipped ? "profilePictureFlipped": "profilePicture"}/>
             <div className={flipped ? "titleHolderFlipped": "titleHolder"}>
                 <h2 className="headerName">{profileName}</h2>

@@ -225,13 +225,13 @@ hobbies} = profileData;
         jobs={search(jobs,'jobs','Array of Objects')} 
         certifications={search(certifications,'certifications','Array of Objects')}
         flipped={flipped} />
-        <Languages 
-          languages={search(languages, "languages","array")}
-          flipped={flipped}
+      <Languages 
+        languages={search(languages, "languages","array")}
+        flipped={flipped}
          />
-         <Hobbies 
-          hobbies={search(hobbies, "hobbies","array")}
-          flipped={flipped}
+      <Hobbies 
+        hobbies={search(hobbies, "hobbies","array")}
+        flipped={flipped}
           />
       <ShowSearchTerm 
         searchTerm={searchTerm}
