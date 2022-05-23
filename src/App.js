@@ -7,8 +7,7 @@ import { SideBar } from './components/SideBar/SideBar';
 import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
 import { Summary } from './components/Summary/Summary';
-import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm'
-// import { Printer } from './components/ComponentToPrint/Printer';
+import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm';
 
 export const App = React.forwardRef((props, ref) => {
   const { 
@@ -211,27 +210,22 @@ hobbies} = profileData;
       <Summary 
         summary={search(summary, "summary objective michiel roukens about front-end frontend back-end backend front back end full stack remote hybrid junior developer codecademy startup","jsx")}
         flipped={flipped} />
-  <SideBar 
-    keySkills={search(keySkills, "key skills","array")}
-    techSkills={search(techSkills, "tech skills","array")}
-    mktSkills={search(mktSkills, "marketing skills","array")}
-    addSkills={search(addSkills, "additional skills","array")}
-    languages={search(languages, "languages","array")}
-    hobbies={search(hobbies, "hobbies", "array")}
-    flipped={flipped}
-     />
-
-    <Content 
-      jobs={search(jobs,'jobs','Array of Objects')} 
-      certifications={search(certifications,'certifications','Array of Objects')}
-      flipped={flipped} />
-    <ShowSearchTerm 
-      searchTerm={searchTerm}
-      flipped={flipped} />
+      <SideBar 
+        keySkills={search(keySkills, "key skills","array")}
+        techSkills={search(techSkills, "tech skills","array")}
+        mktSkills={search(mktSkills, "marketing skills","array")}
+        addSkills={search(addSkills, "additional skills","array")}
+        languages={search(languages, "languages","array")}
+        hobbies={search(hobbies, "hobbies", "array")}
+        flipped={flipped}
+        />
+      <Content 
+        jobs={search(jobs,'jobs','Array of Objects')} 
+        certifications={search(certifications,'certifications','Array of Objects')}
+        flipped={flipped} />
+      <ShowSearchTerm 
+        searchTerm={searchTerm}
+        flipped={flipped} />
     </div>
   );
-
-  
-    
-
 });

@@ -127,7 +127,7 @@ export const profileData = {
     summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
     summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
 
-    keySkills: ['Building web-apps from start to finish','Rocking React & Redux','UI design','Conversion Optimisation'],
+    keySkills: ['Building web-apps from start to finish','Rocking React & Redux','UI design'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup'],

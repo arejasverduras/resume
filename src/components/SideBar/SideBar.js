@@ -4,13 +4,12 @@ import { Widget } from '../Widget/Widget';
 export const SideBar = (props) => {
     // calculate content for Widget components
     const {keySkills, techSkills,mktSkills, addSkills,languages, hobbies,flipped} = props;
-
+    
     const skillMaker = (skillArray) => {
-        return skillArray.map(skill => (
-            <li key={skill}>{skill}</li>
-        ));
-    }
-
+      return skillArray.map(skill => (
+          <li key={skill}>{skill}</li>
+      ));
+   }
 
     return (
         <div className='SideBar'>
