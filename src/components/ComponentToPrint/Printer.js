@@ -4,7 +4,7 @@ import ReactToPrint from 'react-to-print';
 // import { ComponentToPrint } from './ComponentToPrint';
 import { Contact } from '../Contact/Contact';
 
-export const Printer = ({contactInfo, flipped}) => {
+export const Printer = ({contactInfo, flipped}, ref) => {
   const componentRef = useRef();
 
   return (
@@ -14,9 +14,10 @@ export const Printer = ({contactInfo, flipped}) => {
         content={() => componentRef.current}
       />
       <Contact 
+        ref={componentRef}
         contactInfo={contactInfo}
         flipped={flipped}
-        ref={componentRef} />
+         />
     </div>
   );
 };

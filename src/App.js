@@ -228,7 +228,8 @@ hobbies} = profileData;
     <ShowSearchTerm 
       searchTerm={searchTerm}
       flipped={flipped} />
-      <Printer     contactInfo={search(contactInfo, 'contact','object')}
+      <Printer     
+        contactInfo={search(contactInfo, 'contact','object')}
         flipped={flipped}/>
     </div>
 
