@@ -234,6 +234,4 @@ hobbies} = profileData;
   
     
 
-})
-
-// export default App;
+});

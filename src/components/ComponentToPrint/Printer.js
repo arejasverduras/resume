@@ -9,12 +9,18 @@ export const Printer = (props, ref) => {
   const componentRef = useRef();
 
   return (
-    <div>
+    <div className="appContainer">
       <ReactToPrint
-        trigger={() => <button>Print this out!</button>}
+        trigger={() => <button className="printButton topButton">Print / Save as PDF</button>}
         content={() => componentRef.current}
+        
       />
-  <App ref={componentRef}/>
+  <App ref={componentRef} />
+  <ReactToPrint
+        trigger={() => <button className="printButton bottomButton">Print / Save as PDF</button>}
+        content={() => componentRef.current}
+        
+      />
     </div>
   );
 };

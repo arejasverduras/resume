@@ -14,7 +14,86 @@ a {
   font-weight: bold;
 }
 
+.appContainer {
+  display: grid;
+  grid-template-areas: 
+  "topButton"
+  "App"
+  "printButton";
+}
+
+.printButton {
+  grid-area: printButton;
+  border: none;
+  text-decoration: none;
+
+  padding: 14px 28px;
+  margin: 0 auto 20px auto;
+  border-radius: 0px;
+  font-size: 16pt;
+  box-shadow: #ff1b6b 5px 5px;
+
+  background-color: rgba(255, 255, 255, 0.888);
+  color:rgb(49, 48, 48);
+  box-shadow: #45caff 5px 5px;
+  left: 0;
+  top: 0;
+  transition: left 1s, top 1s, box-shadow 1s;
+  letter-spacing: 0.1em;
+}
+
+.printButton:hover {
+  position: relative;
+  left: -15px;
+  top: -10px;
+  box-shadow: #45caff 15px 10px;
+  z-index: 3;
+} 
+
+@media screen and (max-width: 500px) {
+  .printButton:hover {
+    left: 0;
+    top: 0;
+  }
+}
+
+.printButton:active {
+
+}
+
+.topButton {
+  grid-area: topButton;
+  margin-right: 0%;
+  margin-bottom: -50px;
+  opacity: 0.4;
+  transition: none;
+}
+
+.topButton:hover {
+  opacity: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.888);
+  color: rgb(49, 48, 48);
+  border-left: none;
+  border-top: none;
+}
+
+.printButton:active {
+  left: 3px;
+  top: 3px;
+  box-shadow: #45caff 2px 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .topButton {
+    display: none;
+  }
+}
+
+
 .App {
+  grid-area: App;
   display: grid;
   max-width: 80%;
   grid-template-areas: 
@@ -333,6 +412,8 @@ td {
   grid-area: ShowSearchTerm;
   opacity: 60%;
 }
+
+
 
 /* Animations */
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Widget } from '../Widget/Widget';
 
-export const Contact = React.forwardRef (({contactInfo, flipped}, ref) => {
+export const Contact = ({contactInfo, flipped}) => {
     const contactTable = 
     <table>
 {        contactInfo.map(([key, value]) => 
@@ -15,12 +15,10 @@ export const Contact = React.forwardRef (({contactInfo, flipped}, ref) => {
 
 
     return (
-        <div ref={ref}>
         <Widget 
             name="contact" 
             title="Contact" 
             content={contactTable} 
-            flipped={flipped}  />
-        </div>
+            flipped={flipped}  /> 
     )
-});
+};
