@@ -58,10 +58,6 @@ a {
   }
 }
 
-.printButton:active {
-
-}
-
 .topButton {
   grid-area: topButton;
   margin-right: 5px;
@@ -103,16 +99,15 @@ a {
   display: grid;
   max-width: 80%;
   grid-template-areas: 
-  "header header"
-  "contact main"
-  "summary main"
-  "sidebar main"
-  "sidebar main"
-  "sidebar languages"
-  "sidebar ShowSearchTerm";
+  "header header header"
+  "contact main main"
+  "summary main main"
+  "sidebar main main"
+  "sidebar languages hobbies"
+  "ShowSearchTerm ShowSearchTerm ShowSearchTerm";
 
-  margin: 10px auto;
-  grid-template-columns: 35% 65%;
+  margin: auto auto;
+  grid-template-columns: 35% 33% 33%;
   padding-bottom: 30px;
   border-bottom: 5px dotted rgba(255, 255, 255, 0.888);
   margin-bottom: 30px;
