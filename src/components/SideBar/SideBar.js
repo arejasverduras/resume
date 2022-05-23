@@ -33,16 +33,16 @@ export const SideBar = (props) => {
                     title="Additional Skills"  
                     content={skillMaker(addSkills)}
                     flipped={flipped} />
-                 <Widget 
+                 {/* <Widget 
                     name="languages" 
                     title="Languages"  
                     content={skillMaker(languages)}
-                    flipped={flipped} />
-                 <Widget 
+                    flipped={flipped} /> */}
+                 {/* <Widget 
                     name="hobbies" 
                     title="Hobbies"  
                     content={skillMaker(hobbies)}
-                    flipped={flipped} />
+                    flipped={flipped} /> */}
         </div>
     )
 }

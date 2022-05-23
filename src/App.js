@@ -8,6 +8,8 @@ import { Content} from './components/Content/Content';
 import {Contact} from './components/Contact/Contact';
 import { Summary } from './components/Summary/Summary';
 import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm';
+import { Languages } from './components/Languages/Languages';
+import { Hobbies } from './components/Hobbies/Hobbies';
 
 export const App = React.forwardRef((props, ref) => {
   const { 
@@ -223,6 +225,14 @@ hobbies} = profileData;
         jobs={search(jobs,'jobs','Array of Objects')} 
         certifications={search(certifications,'certifications','Array of Objects')}
         flipped={flipped} />
+        <Languages 
+          languages={search(languages, "languages","array")}
+          flipped={flipped}
+         />
+         <Hobbies 
+          hobbies={search(hobbies, "hobbies","array")}
+          flipped={flipped}
+          />
       <ShowSearchTerm 
         searchTerm={searchTerm}
         flipped={flipped} />
