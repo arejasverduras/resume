@@ -112,6 +112,7 @@ export const profileData = {
         email: 'info@arejo.nl',
         location: 'The Hague, Netherlands',
         github: <a href='https://github.com/arejasverduras' target='_blank' rel="noreferrer">github</a>,
+        portfolio: <a href='https://arejasportfolio.surge.sh' target='_blank' rel="noreferrer">portfolio</a>,
         linkedin: <a href='https://www.linkedin.com/in/michielroukens/' target='_blank' rel="noreferrer">LinkedIn</a>,
         // portfolio: ''
 
