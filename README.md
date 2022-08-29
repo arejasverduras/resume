@@ -26,7 +26,6 @@ There is a hidden easter egg that will change the layout, can you find it?!
 
 
 ## Features
-List the ready features here:
 - List workexperience, education and certification from a database (state);
 - List skills, languages and hobbies
 - Live Search the entire app
@@ -52,7 +51,6 @@ Project is:  _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
 - Printing layout does not always scale right
