@@ -34,11 +34,11 @@ List the ready features here:
 - Print the App as a well formatted PDF
 - "Flip" the layout by finding the hidden button. You can flip it back too :)
 
-
-
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-
+![resume1](https://user-images.githubusercontent.com/62893479/187299176-954d5036-2675-4c5f-9c54-75a250d5e4f6.png)
+![resume3](https://user-images.githubusercontent.com/62893479/187299181-05ba954b-fb4d-413b-bfba-cc08684defd4.png)
+![resume4](https://user-images.githubusercontent.com/62893479/187299186-0f3f29f9-ce03-4dea-93bd-dcd7a9950599.png)
+![resume6](https://user-images.githubusercontent.com/62893479/187299192-580daa0a-4ebc-4985-adaa-5ad0824ea376.png)
 
 
 ## Usage
@@ -57,8 +57,6 @@ Include areas you believe need improvement / could be improved. Also add TODOs f
 Room for improvement:
 - Printing layout does not always scale right
 - Add database information from a form in a hidden part of the app. 
-
-
 
 ## Contact
 Created by [@arejasverduras](https://arejasportfolio.surge.sh/) - feel free to contact me!
