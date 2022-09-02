@@ -4,30 +4,23 @@ export const profileData = {
     profileName: 'Michiel Roukens',
     profileTitle: 'React Developer',
     profilePicture: "./images/michiel.jpeg",
-    jobs: [{
+    jobs: [
+        {
+            type: 'experience',
+            period: '2022 - Current',
+            title: 'Becoming a Full-Stack JavaScript Developer',
+            company: 'Arejas',
+            location: 'The Hague',
+            description: 'Bootcamp on Codecademy, Studying React / Express. See: Education / About me'
+        }, 
+        {
         type: 'experience',
-        period: '2020/2022',
+        period: '2019/2022',
         title: 'Freelance Developer',
         company: 'Arejas',
         location: 'The Hague',
         description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
     }, 
-    // {
-    //     type: 'experience',
-    //     period: '2020',
-    //     title: 'Campervan builder',
-    //     company: 'Freelance',
-    //     location: '',
-    //     description: 'Converting cargovans to Campervans'
-    // }, 
-    // {
-    //     type: 'job',
-    //     period: '2017-2019',
-    //     title: 'Travel / Sabbatical',
-    //     company: '',
-    //     location: '',
-    //     description: ''
-    // },
     {
         type: 'experience',
         period: '2010-2019',
@@ -68,11 +61,11 @@ export const profileData = {
     },
     {
         type: 'education',
-        period: '2022 - Present',
+        period: '2021 - Present',
         company: 'codecademy',
         location: '',
         title: 'Full-Stack Developer Career Path Course',
-        description: "Becoming a Full-Stack web developer learning to build web-apps' front-end and back-end using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, Git & Github."
+        description: "Becoming a Full-Stack web developer learning to build web-apps' front-end and back-end using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, JSON, Git & Github."
     },
     {
         type: 'education',
@@ -114,22 +107,17 @@ export const profileData = {
         github: <a href='https://github.com/arejasverduras' target='_blank' rel="noreferrer">github</a>,
         portfolio: <a href='https://arejasportfolio.surge.sh' target='_blank' rel="noreferrer">portfolio</a>,
         linkedin: <a href='https://www.linkedin.com/in/michielroukens/' target='_blank' rel="noreferrer">LinkedIn</a>,
-        // portfolio: ''
-
     },
-    summary2: 'Bad-ass coding Champion!',
+
     summary: <>
     <p><b>Startup founder turned developer.</b></p>
-    <p>Extremely passionate about building beautifull, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
+    <p>Extremely passionate about building beautiful, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
     <p>Having completed the Front-end section of the Full-Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
     <p>Open for a junior position or Freelance assignment. Remote / hybrid preferred. <br/>Get in touch!</p>
 </>,
-    summary3: '"To work passionately on challenging projects, living all around the world,  "',
-    summary4: `Currently studying to become a Full-Stack Developer on codecademy. Having completed the Front-end section, I am looking to find a junior position as a Front-end / React Developer where i can apply and practice my new found skills. `,
-    summary1: '"To become a Full-Stack Developer, working on Interesting projects, developing"',
 
-    keySkills: ['Building web-apps from start to finish','Rocking React & Redux','UI design'],
-    techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library'],
+    keySkills: ['Building web-apps from start to finish','Rocking React & Redux'],
+    techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'JSON'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup'],
     languages: ['Dutch','English','German','Spanish'],
