@@ -7,11 +7,11 @@ export const profileData = {
     jobs: [
         {
             type: 'experience',
-            period: '2022 - Current',
+            period: '2021 - Current',
             title: 'Becoming a Full-Stack JavaScript Developer',
             company: 'Arejas',
             location: 'The Hague',
-            description: 'Bootcamp on Codecademy, Studying React / Express. See: Education / About me'
+            description: 'Bootcamp on Codecademy, Studying React / Express. Build and sold a campervan to be able to study fulltime. See: Education / About me'
         }, 
         {
         type: 'experience',
