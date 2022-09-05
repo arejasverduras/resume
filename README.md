@@ -14,16 +14,13 @@
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
-
 ## General Information
 This app is an up-to-date Resume of my work experience so far. You can search it directly for topics of interest. 
 There is a hidden easter egg that will change the layout, can you find it?!
 
-
 ## Technologies Used
 - React
 - Javascript
-
 
 ## Features
 - Lists work experience, education and certification from a database (state)
@@ -39,20 +36,15 @@ There is a hidden easter egg that will change the layout, can you find it?!
 ![resume4](https://user-images.githubusercontent.com/62893479/187299186-0f3f29f9-ce03-4dea-93bd-dcd7a9950599.png)
 ![resume6](https://user-images.githubusercontent.com/62893479/187299192-580daa0a-4ebc-4985-adaa-5ad0824ea376.png)
 
-
 ## Usage
-Type something in the search bar to filter the resume's results.
-Click the print button to save the current visible parts of the resume as a PDF.
-Find the hidden button to flip the layout.
-
+- Type something in the search bar to filter the resume's results.
+- Click the print button to save the current visible parts of the resume as a PDF.
+- Find the hidden button to flip the layout.
 
 ## Project Status
 Project is:  _complete_ 
 
-
 ## Room for Improvement
-
-Room for improvement:
 - Printing layout does not always scale right.
 - Add database information from a form in a hidden part of the app. 
 
