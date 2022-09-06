@@ -16,7 +16,7 @@ export const Printer = (props, ref) => {
 
     let header = document.getElementsByClassName('header')[0];
     if (header) {
-      header.style.height = '80px';
+      header.style.height = '50px';
       header.style.margin='0';
     }
   
@@ -27,10 +27,10 @@ export const Printer = (props, ref) => {
 
     let profilePicture = document.getElementsByClassName('profilePicture')[0];
     if (profilePicture){
-      profilePicture.style.width = '80px';
+      profilePicture.style.width = '50px';
     } else {
       let profilePictureFlipped = document.getElementsByClassName('profilePictureFlipped')[0];
-      profilePictureFlipped.style.width = '80px';
+      profilePictureFlipped.style.width = '50px';
 
     }
     

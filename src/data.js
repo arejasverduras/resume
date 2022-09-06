@@ -122,5 +122,5 @@ export const profileData = {
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup','SCRUM', 'Agile'],
     languages: ['Dutch','English','German','Spanish'],
-    hobbies: ['Snowboard','Skateboard','Surf','Wake', 'Climbing', 'Guitar', 'Travel', 'Campervans']
+    hobbies: ['Snowboarding','Skateboarding','Surfing','Wakeboarding','Climbing', 'Guitar', 'Travel','Campervans']
 }
