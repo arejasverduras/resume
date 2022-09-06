@@ -23,7 +23,7 @@ a {
 }
 
 button, .pdfButton {
-  display: none;
+  /* display: none; */
   border: none;
   text-decoration: none;
 
