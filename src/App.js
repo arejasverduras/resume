@@ -204,6 +204,7 @@ hobbies} = profileData;
         setSearchTerm={setSearchTerm}
         flipped={flipped}
         setFlipped={setFlipped}
+
       />
       <Contact 
         contactInfo={search(contactInfo, 'contact','object')}

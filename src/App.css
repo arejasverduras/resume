@@ -22,8 +22,8 @@ a {
   "printButton";
 }
 
-.printButton {
-  grid-area: printButton;
+button, .pdfButton {
+
   border: none;
   text-decoration: none;
 
@@ -42,14 +42,56 @@ a {
   letter-spacing: 0.1em;
 }
 
-.printButton:hover {
+button:hover, .pdfButton:hover {
   position: relative;
   left: -15px;
   top: -10px;
   box-shadow: #45caff 15px 10px;
   z-index: 3;
   font-size: 16pt;
-} 
+}
+
+button:active, .pdfButton:active {
+  left: 3px;
+  top: 3px;
+  box-shadow: #45caff 2px 2px;
+}
+
+.pdfButton {
+  font-weight: normal;
+}
+
+.printButton {
+  /* hide the button to disable printer function */
+  display: none;
+  /* hide the button to disable printer function */
+  grid-area: printButton;
+  /* border: none;
+  text-decoration: none;
+
+  padding: 14px 28px;
+  margin: 0 auto 20px auto;
+  border-radius: 0px;
+  font-size: 12pt;
+  box-shadow: #ff1b6b 5px 5px;
+
+  background-color: rgba(255, 255, 255, 0.888);
+  color:rgb(49, 48, 48);
+  box-shadow: #45caff 5px 5px;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+  letter-spacing: 0.1em; */
+}
+
+/* .printButton:hover {
+  position: relative;
+  left: -15px;
+  top: -10px;
+  box-shadow: #45caff 15px 10px;
+  z-index: 3;
+  font-size: 16pt;
+}  */
 
 @media screen and (max-width: 500px) {
   .printButton:hover {

@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const profileData = {
+    pdf: './pdf/Michiel Roukens - React Developer - Full stack developer to be.pdf',
     profileName: 'Michiel Roukens',
     profileTitle: 'React Developer',
     profilePicture: "./images/michiel.jpeg",
