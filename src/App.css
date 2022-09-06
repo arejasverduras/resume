@@ -94,7 +94,7 @@ button:active, .pdfButton:active {
 }  */
 
 @media screen and (max-width: 500px) {
-  .printButton:hover {
+  .printButton:hover, .pdfButton:hover {
     left: 0;
     top: 0;
   }
@@ -130,7 +130,7 @@ button:active, .pdfButton:active {
 }
 
 @media screen and (max-width: 500px) {
-  .printButton {
+  .printButton, .pdfButton {
     display: none;
   }
 }
