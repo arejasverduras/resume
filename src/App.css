@@ -63,7 +63,7 @@ button:active, .pdfButton:active {
 
 .printButton {
   /* hide the button to disable printer function */
-  display: none;
+  /* display: none; */
   /* hide the button to disable printer function */
   grid-area: printButton;
   /* border: none;
