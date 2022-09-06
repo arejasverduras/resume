@@ -27,7 +27,8 @@ There is a hidden easter egg that will change the layout, can you find it?!
 - Lists skills, languages and hobbies
 - Live search the entire app
 - Only relevant information and it's containing widgets will stay visibile, others will hide
-- Print the App as a well formatted PDF
+- Generate an interactive, well formatted one-page PDF for printing.
+- Adds offline links to PDF
 - "Flip" the layout by finding the hidden button. You can flip it back too :)
 
 ## Screenshots
@@ -45,7 +46,6 @@ There is a hidden easter egg that will change the layout, can you find it?!
 Project is:  _complete_ 
 
 ## Room for Improvement
-- Printing layout does not always scale right.
 - Add database information from a form in a hidden part of the app. 
 
 ## Contact
