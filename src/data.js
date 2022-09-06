@@ -119,7 +119,7 @@ export const profileData = {
     keySkills: ['Building web-apps from start to finish','Rocking React & Redux'],
     techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'JSON'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
-    addSkills: ['Adobe Creative Suite','Google Sketchup','SCRUM', "Agile"],
+    addSkills: ['Adobe Creative Suite','Google Sketchup','SCRUM', 'Agile'],
     languages: ['Dutch','English','German','Spanish'],
     hobbies: ['Snowboard','Skateboard','Surf','Wake', 'Climbing', 'Guitar', 'Travel', 'Campervans']
 }
