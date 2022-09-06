@@ -9,7 +9,8 @@ import { profileData } from '../../data';
 export const Printer = (props, ref) => {
   const componentRef = useRef();
 
-  const centerOnPage = () => {
+  const centerOnPage = () =>  {
+
     let toStyle = document.getElementsByClassName('App')[0];
     toStyle.style.fontSize="0.6em";
     toStyle.style.gridTemplateColumns= '30% 20% 55%';
@@ -41,6 +42,11 @@ export const Printer = (props, ref) => {
     let headerTitle = document.getElementsByClassName('headerTitle')[0];
     headerTitle.style.fontSize='12px';
 
+    // view offline link
+    let offlineLink = document.getElementsByClassName('offlineLink')[0];
+    offlineLink.style.display='block';
+    offlineLink.style.color='black';
+
   }
 
   const rePosition = () =>{
@@ -65,6 +71,10 @@ export const Printer = (props, ref) => {
 
     let headerTitle = document.getElementsByClassName('headerTitle')[0];
     headerTitle.style.fontSize='22px';
+
+        // remove offline link
+        let offlineLink = document.getElementsByClassName('offlineLink')[0];
+        offlineLink.style.display='none';
   }
 
   //download the file directly as PDF

@@ -266,6 +266,10 @@ header {
   }
 }
 
+.offlineLink {
+  display:none;
+}
+
 /* Search */
 
 .searchField {

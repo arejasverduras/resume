@@ -26,6 +26,11 @@ export const Header = (props) => {
             <Search 
                 value={searchTerm}
                 setSearchTerm={setSearchTerm}/>
+                <div className="offlineLink">
+                    <p>View this resume online</p>
+                    <a href="https://arejasresume.surge.sh">arejasresume.surge.sh</a>
+                </div>
+                
         </header>
     )
 
