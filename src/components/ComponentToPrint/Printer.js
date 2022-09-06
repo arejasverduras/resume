@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import ReactToPrint from 'react-to-print';
 import {App}from '../../App';
-import { DownloadPDF } from '../DownloadPDF/DownloadPDF';
 import { profileData } from '../../data';
 
 // import { ComponentToPrint } from './ComponentToPrint';
@@ -16,16 +15,25 @@ export const Printer = (props, ref) => {
     toStyle.style.gridTemplateColumns= '30% 20% 55%';
 
     let header = document.getElementsByClassName('header')[0];
-    header.style.height = '80px';
-    header.style.margin='0';
-
+    if (header) {
+      header.style.height = '80px';
+      header.style.margin='0';
+    }
+  
     const allWidgets = Array.from(document.getElementsByClassName('Widget'));
     for (let widget of allWidgets){
       widget.style.padding="6px";
     }
 
     let profilePicture = document.getElementsByClassName('profilePicture')[0];
-    profilePicture.style.width = '80px';
+    if (profilePicture){
+      profilePicture.style.width = '80px';
+    } else {
+      let profilePictureFlipped = document.getElementsByClassName('profilePictureFlipped')[0];
+      profilePictureFlipped.style.width = '80px';
+
+    }
+    
 
     let headerName = document.getElementsByClassName('headerName')[0];
     headerName.style.fontSize='16px';
@@ -62,9 +70,10 @@ export const Printer = (props, ref) => {
   //download the file directly as PDF
   const {pdf} = profileData;
 
+
   return (
     <div className="appContainer">
-      <ReactToPrint
+<ReactToPrint
         onBeforeGetContent={centerOnPage}
         onAfterPrint={rePosition}
         // pageStyle={pageStyle}

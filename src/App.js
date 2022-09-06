@@ -196,6 +196,7 @@ hobbies} = profileData;
 
   return (
     <div ref={ref} className="App">
+      
       <Header 
         profileName={profileName} 
         profileTitle={profileTitle}
@@ -204,7 +205,6 @@ hobbies} = profileData;
         setSearchTerm={setSearchTerm}
         flipped={flipped}
         setFlipped={setFlipped}
-
       />
       <Contact 
         contactInfo={search(contactInfo, 'contact','object')}
