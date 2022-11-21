@@ -126,64 +126,6 @@ hobbies} = profileData;
 
     },[searchTerm, flipped])
 
-
-    //Show / Hide ShowSearchTerm
-
-    // useEffect(()=>{
-    //   let widgets = document.getElementsByClassName('Widget');
-
-    //   let showSearchTerm = document.getElementsByClassName('ShowSearchTerm')[0];
-
-    //   let widgetsEntries = Object.entries(widgets);
-    //   console.log(widgetsEntries);
-
-    //   for (let x = 0; x < widgetsEntries.length;x++){
-    //     let displayValue = Object.values(widgets[x].style.display).join('');
-    //     console.log(displayValue);
-        
-    //     if (displayValue === 'none') {
-    //       console.log('display none: ' + displayValue)
-    //       showSearchTerm.style.display="grid"
-    //        console.log(showSearchTerm.style.display);
-    //     } else {
-    //       console.log('display other: '+ displayValue);
-    //       showSearchTerm.style.display="none";
-    //       console.log('stdisplayvalue: '+showSearchTerm.style.display);
-    //     }
-    //   }
-
-    //     // let displayValue = Object.values(widgets[0].style.display).join('');
-    //     // console.log(displayValue);
-    //     // if (displayValue === 'none') {
-    //     //   console.log('display none: ' + displayValue)
-    //     //   showSearchTerm.style.display="grid"
-    //     //    console.log(showSearchTerm.style.display);
-    //     // } else {
-    //     //   console.log('display other: '+ displayValue);
-    //     //   showSearchTerm.style.display="none"
-    //     //   console.log(showSearchTerm.style.display);
-    //     // }
-
-
-
-      
-
-
-    // //  if (displayValue === 'none') {
-    // //    console.log('display none: ' + displayValue)
-    // //    showSearchTerm.style.display="grid"
-    // //     console.log(showSearchTerm.style.display);
-    // //  } else {
-    // //    console.log('display other: '+ displayValue);
-    // //    showSearchTerm.style.display="none"
-    // //    console.log(showSearchTerm.style.display);
-    // //  }
-
-
-    // },[searchTerm])
-
-    // Show / Hide ShowSearchTerm based on searchTerm
-
     useEffect(()=>{
       let show = document.getElementsByClassName('ShowSearchTerm')[0];
       if (searchTerm === ''){

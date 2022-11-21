@@ -7,7 +7,6 @@ export const Search = ({searchTerm, setSearchTerm}) => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        // console.log('hallo??');
         e.target.firstChild.blur();
     }
 

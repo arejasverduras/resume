@@ -4,7 +4,7 @@ export const profileData = {
     pdf: './pdf/Michiel Roukens - React Developer - Full stack developer to be.pdf',
     profileName: 'Michiel Roukens',
     profileTitle: 'React Developer',
-    profilePicture: "./images/michiel.jpeg",
+    profilePicture: "/images/michiel.jpeg",
     jobs: [
         {
             type: 'experience',
@@ -94,7 +94,14 @@ export const profileData = {
         description: 'Atheneum. Focus on Economics & Society. Field of choice: Computer Science. Research paper: Encryption.'
     },
 ],
-    certifications: [{
+    certifications: [
+        {
+            type: 'certification',
+            title: 'TypeScript',
+            description: "Learn TypeScript",
+            institute: 'Codecademy',
+            date: "Oct '22"
+        },{
         type: 'certification',
         title: 'Back-end app with Javascript',
         description: "Write API's with Node, Express & SQL",
@@ -118,7 +125,7 @@ export const profileData = {
 </>,
 
     keySkills: ['Building web-apps from start to finish','Rocking React & Redux'],
-    techSkills: ['HTML', 'CSS', 'JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'JSON'],
+    techSkills: ['HTML', 'CSS', 'TypeScript','JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'JSON'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup','SCRUM', 'Agile'],
     languages: ['Dutch','English','German','Spanish'],
