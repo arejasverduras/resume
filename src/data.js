@@ -12,7 +12,7 @@ export const profileData = {
             title: 'Becoming a Full-Stack JavaScript Developer',
             company: 'Arejas',
             location: 'The Hague',
-            description: 'Bootcamp on Codecademy, Studying React / Express. Build and sold a campervan to be able to study fulltime. See: Education / About me.'
+            description: 'Bootcamp on Codecademy. Completed the Front-End Engineer Path, now continuing for Full-Stack. Studying React / Express. Build and sold a campervan to be able to study fulltime.'
         }, 
         {
         type: 'experience',
@@ -134,7 +134,7 @@ export const profileData = {
     summary: <>
     <p><b>Startup founder turned developer.</b></p>
     <p>Extremely passionate about building beautiful, practical and smart things. Self-starting, highly determined, obsessively persistent.</p>
-    <p>Having completed the Front-end section of the Full-Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
+    <p>Having completed the Front-end Engineer Path of the Full-Stack Career Course on <a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path">codecademy</a>, I am eager to practice my new found skills as a Front-end / React Developer. </p>
     <p>Open for a junior position or Freelance assignment. Remote / hybrid preferred. <br/>Get in touch!</p>
 </>,
 
