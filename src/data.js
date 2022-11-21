@@ -62,11 +62,19 @@ export const profileData = {
     },
     {
         type: 'education',
-        period: '2021 - Present',
+        period: 'oct 2022 - Present',
         company: 'codecademy',
         location: '',
-        title: 'Full-Stack Developer Career Path Course',
+        title: 'Full-Stack Developer Career Path',
         description: "Becoming a Full-Stack web developer learning to build web-apps' front-end and back-end using HTML, CSS, JavaScript, React, Redux, Node, Express, SQL, TDD, Mocha, Jest, React Testing Library, Markdown, JSON, Git & Github."
+    },
+    {
+        type: 'education',
+        period: '2021 - oct 2022',
+        company: 'codecademy',
+        location: '',
+        title: 'Frond-End Engineer Career Path',
+        description: "Become a Front-end Engineer. Make UIs and websites beautiful, functional, and fast. Cover all the topics that bootcamps teach (and more). Focus: JavaScript, React, Redux, Data structures, Algorithms, Git & GitHub, TDD",
     },
     {
         type: 'education',
@@ -99,6 +107,12 @@ export const profileData = {
             type: 'certification',
             title: 'TypeScript',
             description: "Learn TypeScript",
+            institute: 'Codecademy',
+            date: "Oct '22"
+        },        {
+            type: 'certification',
+            title: 'Front-End Engineer Career Path',
+            description: "Become a Front-end Engineer",
             institute: 'Codecademy',
             date: "Oct '22"
         },{
