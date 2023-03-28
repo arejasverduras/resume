@@ -87,7 +87,7 @@ export const Printer = (props, ref) => {
               trigger={() => <button className="printButton topButton">Print / Save as PDF</button>}
               content={() => componentRef.current}
             /> */}
-      <DownloadPDF />
+      {/* <DownloadPDF /> */}
   <App ref={componentRef} />
   {/* <ReactToPrint 
         onBeforeGetContent={centerOnPage}

@@ -1,6 +1,7 @@
 .link {
     background-color: var(--white);
     display: flex;
+    align-items: center;
     padding: 42px 8px 12px 8px;
     position: fixed;
     right: 5vw;
@@ -19,4 +20,16 @@
 
 .link:active {
     top: 0px;
+}
+
+.link svg {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+@media screen and (min-width: 1440px) {
+    .link {
+        right: calc(((100% - 1440px)/2));
+        margin-right: 235px;
+    }
 }

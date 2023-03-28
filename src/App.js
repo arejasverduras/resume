@@ -10,6 +10,7 @@ import { Summary } from './components/Summary/Summary';
 import { ShowSearchTerm} from './components/ShowSearchTerm/ShowSearchTerm';
 import { Languages } from './components/Languages/Languages';
 import { Hobbies } from './components/Hobbies/Hobbies';
+import { DownloadPDF } from './components/DownloadPDF/DownloadPDF';
 
 export const App = React.forwardRef((props, ref) => {
   const { 
@@ -137,6 +138,7 @@ hobbies} = profileData;
 
   return (
     <div ref={ref} className="App">
+      <DownloadPDF/>
       <Header 
         profileName={profileName} 
         profileTitle={profileTitle}
