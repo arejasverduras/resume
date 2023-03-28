@@ -12,8 +12,6 @@ export const Contact = ({contactInfo, flipped}) => {
         )}
     </table>
 
-
-
     return (
         <Widget 
             name="contact" 

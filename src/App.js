@@ -82,7 +82,6 @@ hobbies} = profileData;
           } else {
             // result = `You searched for: "${searchTerm}"`;
             result = ''
-
           }
         } else if (type === 'jsx') {
           if (cat.includes(searchTerm.toLowerCase())){
@@ -138,7 +137,6 @@ hobbies} = profileData;
 
   return (
     <div ref={ref} className="App">
-      
       <Header 
         profileName={profileName} 
         profileTitle={profileTitle}

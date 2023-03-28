@@ -2,9 +2,7 @@ import React, { useRef } from 'react';
 import ReactToPrint from 'react-to-print';
 import {App}from '../../App';
 import { profileData } from '../../data';
-
-// import { ComponentToPrint } from './ComponentToPrint';
-// import { Contact } from '../Contact/Contact';
+import { DownloadPDF } from '../DownloadPDF/DownloadPDF';
 
 export const Printer = (props, ref) => {
   const componentRef = useRef();
@@ -83,23 +81,20 @@ export const Printer = (props, ref) => {
 
   return (
     <div className="appContainer">
-<ReactToPrint
-        onBeforeGetContent={centerOnPage}
-        onAfterPrint={rePosition}
-        // pageStyle={pageStyle}
-        trigger={() => <button className="printButton topButton">Print / Save as PDF</button>}
-        content={() => componentRef.current}
-      />
-      {/* <DownloadPDF pdf={pdf}/> */}
+      {/* <ReactToPrint
+              onBeforeGetContent={centerOnPage}
+              onAfterPrint={rePosition}
+              trigger={() => <button className="printButton topButton">Print / Save as PDF</button>}
+              content={() => componentRef.current}
+            /> */}
+      <DownloadPDF />
   <App ref={componentRef} />
-  {/* <DownloadPDF pdf={pdf}/> */}
-  <ReactToPrint 
+  {/* <ReactToPrint 
         onBeforeGetContent={centerOnPage}
         onAfterPrint={rePosition}
         trigger={() => <button className="printButton bottomButton">Print / Save as PDF</button>}
         content={() => componentRef.current}    
-      />
-      
+      /> */}
     </div>
   );
 };

@@ -1,0 +1,22 @@
+.link {
+    background-color: var(--white);
+    display: flex;
+    padding: 42px 8px 12px 8px;
+    position: fixed;
+    right: 5vw;
+    top: -30px;
+    border-radius: 0 0 15px 15px;
+    color: var(--black);
+    border: 2px solid var(--black);
+    transition: all 0.4s;
+    z-index: 10;
+}
+
+.link:hover {
+    top: -20px;
+    background-color: white;
+}
+
+.link:active {
+    top: 0px;
+}

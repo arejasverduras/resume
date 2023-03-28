@@ -8,8 +8,15 @@ export const profileData = {
     jobs: [
         {
             type: 'experience',
-            period: '2021 - Current',
-            title: 'Becoming a Full-Stack JavaScript Developer',
+            period: 'Dec 2022 - current',
+            title: 'Freelance Front-end JavaScript Developer',
+            company: 'Arejas',
+            location: 'The Hague',
+            description: 'React based web-apps. Current project: Next.js + headless CMS webapp for a local business.'
+        }, {
+            type: 'experience',
+            period: '2021 - 2022',
+            title: 'Becoming a Front-end JavaScript Developer',
             company: 'Arejas',
             location: 'The Hague',
             description: 'Bootcamp on Codecademy. Completed the Front-End Engineer Path, now continuing for Full-Stack. Studying React / Express. Build and sold a campervan to be able to study fulltime.'
@@ -17,7 +24,7 @@ export const profileData = {
         {
         type: 'experience',
         period: '2019/2022',
-        title: 'Freelance Developer',
+        title: 'Freelance Wordpress Developer',
         company: 'Arejas',
         location: 'The Hague',
         description: 'Wordpress websites & webshops for different clients using Divi, Elementor, WooCommerce, HTML and CSS.'
@@ -62,7 +69,7 @@ export const profileData = {
     },
     {
         type: 'education',
-        period: 'oct 2022 - Present',
+        period: 'Oct 2022 - Present',
         company: 'codecademy',
         location: '',
         title: 'Full-Stack Developer Career Path',
@@ -99,7 +106,7 @@ export const profileData = {
         location: 'Alphen aan den Rijn',
         title: 'Atheneum',
         descriptionNL: 'Atheneum. Richting Economie & Maatschappij. Keuzevak Informatica. Profielwerkstuk: Encryptie',
-        description: 'Atheneum. Focus on Economics & Society. Field of choice: Computer Science. Research paper: Encryption.'
+        description: 'Atheneum. Field of choice: Computer Science. Research paper: Encryption.'
     },
 ],
     certifications: [
@@ -118,7 +125,7 @@ export const profileData = {
         },{
         type: 'certification',
         title: 'Back-end app with Javascript',
-        description: "Write API's with Node, Express & SQL",
+        description: "Build API's with Node, Express & SQL",
         institute: 'Codecademy',
         date: "Jan '21"
     }],
@@ -139,7 +146,7 @@ export const profileData = {
 </>,
 
     keySkills: ['Building web-apps from start to finish','Rocking React & Redux'],
-    techSkills: ['HTML', 'CSS', 'TypeScript','JavaScript','React','Redux','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'JSON'],
+    techSkills: ['HTML', 'CSS', 'JavaScript','TypeScript','React','Redux','Next.js','Node.js','Express.js','SQL','Git','GitHub','TDD','Mocha','JEST','React Testing Library', 'Markdown', 'JSON', 'Headless CMS', 'Framer Motion'],
     mktSkills: ['Google Analytics','Goal Tracking','Growth Hacking Principles','Split Testing','Conversion Optimalisation','Google Adwords','Facebook Ads'],
     addSkills: ['Adobe Creative Suite','Google Sketchup','SCRUM', 'Agile'],
     languages: ['Dutch','English','German','Spanish'],

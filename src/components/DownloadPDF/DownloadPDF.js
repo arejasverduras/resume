@@ -1,8 +1,6 @@
 import React from 'react';
-// import resume from './Michiel Roukens - React Developer - Full stack developer to be.pdf'
-// import resume from './Resume.pdf'
-import resume from '../../documents/Resume.pdf'
-
+import styles from './DownloadPDF.module.css';
+import resume from '../../documents/Michiel Roukens - React Developer - Front-end Developer.pdf'
 
 export const DownloadPDF = () => {
     if (!resume) {
@@ -10,8 +8,8 @@ export const DownloadPDF = () => {
     } else {
     
     return (
-        <a className="pdfButton" href={resume} target="_blank" rel='noreferrer'>
-            Download resume as PDF
+        <a className={styles.link} href={resume} target="_blank" rel='noreferrer'>
+            Download as PDF
         </a>
     )
     }

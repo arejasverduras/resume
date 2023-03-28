@@ -1,3 +1,10 @@
+:root {
+  --first: #ff1b6b;
+  --second: #45caff;
+  --white: rgba(255, 255, 255, 0.888);
+  --black: rgb(49, 48, 48);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,25 +27,23 @@ a {
   "topButton"
   "App"
   "printButton";
+  justify-content: flex-end;
 }
 
 button, .pdfButton {
-  /* display: none; */
   border: none;
   text-decoration: none;
-
   padding: 14px 28px;
-  margin: 0 auto 20px auto;
+  width: 200px;
+  /* margin: 0 auto 20px auto; */
   border-radius: 0px;
   font-size: 12pt;
-  box-shadow: #ff1b6b 5px 5px;
-
   background-color: rgba(255, 255, 255, 0.888);
   color:rgb(49, 48, 48);
-  box-shadow: #45caff 5px 5px;
+  box-shadow: #45caff 2px 2px;
   left: 0;
   top: 0;
-  transition: all 1s;
+  transition: all 0.4s;
   letter-spacing: 0.1em;
 }
 
@@ -46,9 +51,14 @@ button:hover, .pdfButton:hover {
   position: relative;
   left: -15px;
   top: -10px;
-  box-shadow: #45caff 15px 10px;
+  box-shadow: #45caff -15px -5px;
   z-index: 3;
   font-size: 16pt;
+}
+
+.pdfButton:hover {
+  left: 15px;
+  top: 10px;
 }
 
 button:active, .pdfButton:active {
@@ -59,39 +69,12 @@ button:active, .pdfButton:active {
 
 .pdfButton {
   font-weight: normal;
+  
 }
 
 .printButton {
-  /* hide the button to disable printer function */
-  /* display: none; */
-  /* hide the button to disable printer function */
   grid-area: printButton;
-  /* border: none;
-  text-decoration: none;
-
-  padding: 14px 28px;
-  margin: 0 auto 20px auto;
-  border-radius: 0px;
-  font-size: 12pt;
-  box-shadow: #ff1b6b 5px 5px;
-
-  background-color: rgba(255, 255, 255, 0.888);
-  color:rgb(49, 48, 48);
-  box-shadow: #45caff 5px 5px;
-  left: 0;
-  top: 0;
-  transition: all 1s;
-  letter-spacing: 0.1em; */
 }
-
-/* .printButton:hover {
-  position: relative;
-  left: -15px;
-  top: -10px;
-  box-shadow: #45caff 15px 10px;
-  z-index: 3;
-  font-size: 16pt;
-}  */
 
 @media screen and (max-width: 500px) {
   .printButton:hover, .pdfButton:hover {
@@ -169,7 +152,7 @@ button:active, .pdfButton:active {
   
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .App {
     grid-template-areas: 
     "header"
@@ -187,7 +170,6 @@ button:active, .pdfButton:active {
 /* Header */
 
 header {
-  /* border: 2px dotted grey; */
   grid-area: header;
   display: flex;
   flex-wrap: wrap;
@@ -199,7 +181,6 @@ header {
 }
 .profilePicture, .profilePictureFlipped {
   width: 200px;
-  /* border: 3px solid white; */
   border-radius: 50%;
   box-shadow: rgb(49, 48, 48) -5px 5px;
   top: 0px;
@@ -244,8 +225,6 @@ header {
   background-color: rgb(49, 48, 48);
 }
 
-
-
 .headerName {
   font-size: 26px;
 }
@@ -271,7 +250,6 @@ header {
 }
 
 /* Search */
-
 .searchField {
   padding: 8px;
   border-radius: 15px;
@@ -282,7 +260,6 @@ header {
 }
 
 @media screen and (max-width: 500px) {
-
   form {
     min-width: 100%;
     display: flex;
@@ -291,16 +268,11 @@ header {
   .searchField {
     min-width: 80%;
   }
-  
 }
-
-/* Contact */
 
 /* Widget */
 .Widget {
-  /* background-color: rgb(41, 237, 194); */
   margin: 2px;
-  /* border: 2px solid whitesmoke; */
   left: 0px;
   top: 0px;
   background-color: rgb(49, 48, 48);
@@ -310,7 +282,6 @@ header {
 }
 
 .WidgetFlipped {
-
   margin: 2px;
   left: 0px;
   top: 0px;
@@ -343,7 +314,7 @@ header {
   z-index: 3; 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .Widget:hover, .WidgetFlipped:hover {
     left: 0px;
     top: 0px;
